@@ -1,7 +1,10 @@
 package net.solarquant.neuralnet;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -42,7 +45,9 @@ public class TrainingManager extends NetManager{
 		//Next check for requests that are in retrieving data state.
 		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.RETRIEVING_DATA);
 		if(rd != null) {
+
 			if(verifyStoredData(rd)) {
+
 				reqId = rd.getRequestId();
 				engine = rd.getEngineName();
 				boolean success = startTraining(reqId, engine);
@@ -83,6 +88,7 @@ public class TrainingManager extends NetManager{
 	//checks if stored data is up to date with the current day's datum
 	private boolean verifyStoredData(Request r) {
 		Date lastDate = db.getLatestTrainingDataDate(r);
+		System.out.println(lastDate);
 		if(lastDate == null) {
 			return false;
 		}
@@ -142,11 +148,20 @@ public class TrainingManager extends NetManager{
 
 		if(engine.equalsIgnoreCase("tensorflow")) {
 
-			ProcessBuilder pb = new ProcessBuilder("python", "QuantExecutor.py", "-r 1");
+			ProcessBuilder pb = new ProcessBuilder("python", "QuantExecutor.py", "-r", ""+requestId);
 			pb.directory(new File("../../tensorflow/SolarQuant/src/"));
 
 			try {
 				Process p = pb.start();
+				/*
+				InputStream i = p.getInputStream();
+				InputStreamReader ir = new InputStreamReader(i);
+				BufferedReader b = new BufferedReader(ir);
+				String l;
+				while((l = b.readLine()) != null) {
+					System.out.println(l);
+				}
+				*/
 			} catch (IOException e) {
 				e.printStackTrace();
 				return false;
