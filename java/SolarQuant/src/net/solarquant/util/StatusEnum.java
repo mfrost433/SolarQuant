@@ -3,7 +3,7 @@ package net.solarquant.util;
 
 public enum StatusEnum {
 
-	INITIAL(1), RUNNING(2), FINISHED(3);
+	INITIAL(1), RETRIEVING_DATA(2), RUNNING(3), FINISHED(4);
 
 	private int stateId_;
 	StatusEnum(int i) {
