@@ -4,8 +4,6 @@
 # nothing in the extra folder
 extra/
 
-#nothing in the database folder
-database/
 
 #nothing in the inputFiles folder
 emergent/inputFiles/*.dat
