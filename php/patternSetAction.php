@@ -163,33 +163,6 @@ if ($theButton == "")
 		
 		echo("after writeTrainingFile <br>");
 		
-		/*  refactored 20140907
-		
-		echo(" fileContents:" . $fileContents."<br><br>");	
-		
-		//generate unique name based on datetime
-		$startTime = strtotime($thePatternSet->startDate);
-		$showStartDate = date("Ymd",$startTime);
-		$endTime = strtotime($thePatternSet->endDate);
-		$showEndDate = date("Ymd",$endTime);
-				
-		//name the file
-		$fileName = "ConsumptionPattern_".$thePatternSet->id."_".$showStartDate."_".$showEndDate."_".$saveTime.".dat";
-		//$fileName = "S".$thePatternSet->id."_".$saveTime.".dtbl";
-		
-		echo(" fileName:" . $fileName."<br><br>");	
-		
-		$fp = fopen("../emergent/output/".$fileName, 'w');
-		//$fp = fopen($fileName, 'w');
-		
-		//write the file
-		fwrite($fp, $fileContents);
-
-		//close the file
-		fclose($fp);
-		
-		*/
-		
 		echo("out createConsumptionDataTableFile<br>");
 		
 		//return to list
@@ -244,11 +217,7 @@ if ($theButton == "")
 	elseif ($function == "generateNNWeights")
 	{
 	
-		//echo("in generateNNWeights<br>");
-		
-		
-//	echo(" REQUEST['patternSetId']:" . $_REQUEST['patternSetId']."<br><br>");	
-		
+	
 		//instantiate object
 		$thePatternSet = new PatternSet;
 		
@@ -257,13 +226,11 @@ if ($theButton == "")
 		
 		$thePatternSet->constructFromId();
 		
-//	echo("thePatternSet->patternSetId:" . $thePatternSet->id."<br><br>");	
-		
-	//	echo("before generateNNWeights<br>");
+
 		
 		$thePatternSet->generateNNInputWeights();
 		
-	//	echo("out generateNNWeights<br>");
+
 	}
 	elseif ($function == "generateConsumptionNNWeights")
 	{

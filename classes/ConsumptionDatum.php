@@ -1,7 +1,7 @@
 <?php
 
 //require "../classes/node.php";
-require_once "./SolarUtility.php";
+require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
 class ConsumptionDatum {
 

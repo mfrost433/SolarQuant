@@ -12,12 +12,13 @@ import net.solarquant.util.StatusEnum;
  *
  */
 public class Request {
+
 	private DBHandler d = new DBHandler();
+	
 	private Date date_;
 	private String engine_;
 	private StatusEnum status_;
-	private int requestId_;
-	private int nodeId_;
+	private int requestId_, nodeId_;
 	private String sourceId_;
 
 	public Request(Date date, String engine, int status, int requestId, int nodeId, String sourceId) {

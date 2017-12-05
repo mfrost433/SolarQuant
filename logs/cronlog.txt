@@ -1,0 +1,22 @@
+INFO    2017-12-05 16:02:01,766 [main] net.solarquant.neuralnet.TrainingManager  - Training Manager started
+INFO    2017-12-05 16:02:01,766 [main] net.solarquant.neuralnet.TrainingManager  - Checking running jobs...
+INFO    2017-12-05 16:02:01,773 [main] net.solarquant.neuralnet.TrainingManager  - Checking data retrieval jobs...
+2017-12-05
+INFO    2017-12-05 16:02:01,788 [main] net.solarquant.neuralnet.TrainingManager  - Stored data verified up to date.
+INFO    2017-12-05 16:02:01,788 [main] net.solarquant.neuralnet.TrainingManager  - Starting training
+Using TensorFlow backend.
+/usr/local/lib/python2.7/dist-packages/keras/models.py:939: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  warnings.warn('The `nb_epoch` argument in `fit` '
+2017-12-05 16:02:02.479557: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2017-12-05 16:02:02.686690: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-12-05 16:02:02.687163: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7715
+pciBusID: 0000:01:00.0
+totalMemory: 5.93GiB freeMemory: 5.40GiB
+2017-12-05 16:02:02.687192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
+INFO    2017-12-05 16:02:05,251 [main] net.solarquant.neuralnet.TrainingManager  - Successfully started training
+INFO    2017-12-05 16:03:01,570 [main] net.solarquant.neuralnet.TrainingManager  - Training Manager started
+INFO    2017-12-05 16:03:01,571 [main] net.solarquant.neuralnet.TrainingManager  - Checking running jobs...
+true
+INFO    2017-12-05 16:03:01,626 [main] net.solarquant.neuralnet.TrainingManager  - Checking data retrieval jobs...
+INFO    2017-12-05 16:03:01,627 [main] net.solarquant.neuralnet.TrainingManager  - Checking inital state jobs...

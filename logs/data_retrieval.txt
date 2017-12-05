@@ -1,0 +1,32 @@
+
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:created weather sets
+ERROR:executing query
+ERROR:1062 (23000): Duplicate entry '205-HotWater-2015-12-11 09:00:00' for key 'PRIMARY'
+ERROR:created weather sets
+ERROR:executing query
+ERROR:1062 (23000): Duplicate entry '205-HotWater-2016-03-22 10:00:00' for key 'PRIMARY'
+ERROR:created weather sets
+ERROR:executing query
+ERROR:1062 (23000): Duplicate entry '205-HotWater-2016-10-13 12:00:00' for key 'PRIMARY'
+ERROR:created weather sets
+ERROR:executing query
+ERROR:created weather sets
+ERROR:executing query

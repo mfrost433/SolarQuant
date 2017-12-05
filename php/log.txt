@@ -1,0 +1,56 @@
+2017-12-05 11:27:50
+
+176
+Phase1
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, 'Phase1','2017-12-05 11:27:50',1, 'Tensorflow')good2017-12-05 11:28:31
+
+176
+00542.T
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, '00542.T','2017-12-05 11:28:31',1, 'Tensorflow')good2017-12-05 11:29:15
+
+176
+Phase1
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, 'Phase1','2017-12-05 11:29:15',1, 'Tensorflow')good2017-12-05 11:30:15
+
+205
+House
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-05 11:30:15',1, 'Tensorflow')good2017-12-05 11:36:03
+
+176
+00542.3
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, '00542.3','2017-12-05 11:36:03',1, 'Tensorflow')good2017-12-05 11:38:09
+
+176
+00542.1
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, '00542.1','2017-12-05 11:38:09',1, 'Tensorflow')good2017-12-05 11:43:54
+
+176
+00542.T
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, '00542.T','2017-12-05 11:43:54',1, 'Tensorflow')good2017-12-05 11:44:55
+
+176
+Phase1
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, 'Phase1','2017-12-05 11:44:55',1, 'Tensorflow')good2017-12-05 11:58:16
+
+176
+00542.T
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, '00542.T','2017-12-05 11:58:16',1, 'Tensorflow')good2017-12-05 12:27:09
+
+176
+Phase3
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 176, 'Phase3','2017-12-05 12:27:09',1, 'Tensorflow')good2017-12-05 14:13:38
+
+205
+HotWater
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'HotWater','2017-12-05 14:13:38',1, 'Tensorflow')good
