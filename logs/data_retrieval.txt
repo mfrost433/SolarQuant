@@ -2,7 +2,324 @@
 ERROR:
 started!!!!!!!!!!!
 ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
 ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:local variable 'e' referenced before assignment
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:cannot concatenate 'str' and 'int' objects
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:
+started!!!!!!!!!!!
 ERROR:
 started!!!!!!!!!!!
 ERROR:
@@ -17,16 +334,151 @@ ERROR:
 started!!!!!!!!!!!
 ERROR:created weather sets
 ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
 ERROR:created weather sets
 ERROR:executing query
-ERROR:1062 (23000): Duplicate entry '205-HotWater-2015-12-11 09:00:00' for key 'PRIMARY'
+ERROR:
+started!!!!!!!!!!!
 ERROR:created weather sets
 ERROR:executing query
-ERROR:1062 (23000): Duplicate entry '205-HotWater-2016-03-22 10:00:00' for key 'PRIMARY'
+ERROR:
+started!!!!!!!!!!!
 ERROR:created weather sets
 ERROR:executing query
-ERROR:1062 (23000): Duplicate entry '205-HotWater-2016-10-13 12:00:00' for key 'PRIMARY'
+ERROR:
+started!!!!!!!!!!!
 ERROR:created weather sets
 ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list index out of range
+ERROR:
+started!!!!!!!!!!!
 ERROR:created weather sets
 ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:'wattHours'
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:list indices must be integers, not float
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:executing query
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:[Errno 32] Broken pipe
+ERROR:
+started!!!!!!!!!!!
+ERROR:created weather sets
+ERROR:[Errno 32] Broken pipe

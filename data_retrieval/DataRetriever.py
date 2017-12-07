@@ -8,6 +8,12 @@ directory = os.path.dirname(__file__)
 print(directory)
 class DataRetriever():
 
+#
+#WEATHER DATUM DOES NOT GO BACK FAR ENOUGH - 2015 IS EARLIEST
+#
+#
+#
+#
 
 
     PREFIX = "https://data.solarnetwork.net"
@@ -19,13 +25,14 @@ class DataRetriever():
         self.weatherFolder = os.path.join(directory, "weather/")
         if((startDate == None) | (endDate == None)):
             startDate, endDate = self.getInterval()
-            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d %M:%S")
+            if(datetime.datetime.strptime(startDate, "%Y-%m-%d %M:%S") < datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")):
+                self.startDate = datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")
+            else:
+                self.startDate = datetime.datetime.strptime(startDate, "%Y-%m-%d %M:%S")
             self.endDate = datetime.datetime.strptime(endDate, "%Y-%m-%d %M:%S")
-            print(startDate)
-            print(endDate)
 
         else:
-            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d")
+            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d") - datetime.timedelta(days=14)
             self.endDate = datetime.datetime.strptime(endDate,"%Y-%m-%d")
 
     def getChunkEndDate(self, current, endDate, minInterval):
@@ -39,7 +46,6 @@ class DataRetriever():
 
         chunkStart = self.startDate
         while (chunkStart < self.endDate):
-
             chunkEnd = self.getChunkEndDate(chunkStart,self.endDate, 10)
 
             startString = datetime.datetime.strftime(chunkStart,"%Y-%m-%dT12%%3A00")
@@ -67,12 +73,13 @@ class DataRetriever():
 
         chunkStart = self.startDate
         while (chunkStart < self.endDate):
-
             chunkEnd = self.getChunkEndDate(chunkStart, self.endDate, 30)
 
             startString = datetime.datetime.strftime(chunkStart,"%Y-%m-%d")
+
             endString = datetime.datetime.strftime(chunkEnd, "%Y-%m-%d")
-           # print()
+
+
             request = Request(self.PREFIX+"/solarquery/api/v1/pub/location/datum/list?locationId=301025&sourceIds="
                               "NZ%20MetService&offset=0&"
                               "startDate=" + startString + "&endDate=" + endString)

@@ -10,16 +10,20 @@
 	rel='stylesheet'>
 <script src='../js/bootstrap.min.js'></script>
 <script language="javascript" src="../includes/calendar.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 </head>
 
 <body bgcolor='#ffffff'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
 		function getDropdown(obj){
 
 			$.ajax({
@@ -82,7 +86,8 @@ if (isset($nodeId)) {
 
 			<tr>
 				<td><span class="solar4">Node and Source</span></td>
-				<td><select name="nodeId" id="nodeId", onChange="getDropdown(this)" required>
+				<td><select name="nodeId" id="nodeId" onChange="getDropdown(this)"
+					required>
             <?php
             $servername = "localhost";
             $username = "solarquant";
@@ -91,19 +96,18 @@ if (isset($nodeId)) {
             
             $conn = new mysqli($servername, $username, $password, $dbname);
             
-            $query = "SELECT node_id FROM node";
+            $query = "SELECT node_id FROM registered_nodes";
             $result = $conn->query($query);
             
-            $select = "";
+            $select = '<option value="">None</option>';
             while ($row = $result->fetch_assoc()) {
                 $select .= '<option value="' . $row['node_id'] . '">' . $row['node_id'] . '</option>';
             }
             echo $select;
             
             ?>
-            </select> 
-            <select name="sourceId" id="sourceId" required>
-				</select> </td>
+            </select> <select name="sourceId" id="sourceId" required>
+				</select></td>
 
 
 			</tr>

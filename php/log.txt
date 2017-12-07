@@ -1,56 +1,86 @@
-2017-12-05 11:27:50
+2017-12-07 14:18:18
 
-176
-Phase1
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, 'Phase1','2017-12-05 11:27:50',1, 'Tensorflow')good2017-12-05 11:28:31
 
-176
-00542.T
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, '00542.T','2017-12-05 11:28:31',1, 'Tensorflow')good2017-12-05 11:29:15
 
-176
-Phase1
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, 'Phase1','2017-12-05 11:29:15',1, 'Tensorflow')good2017-12-05 11:30:15
 
+INSERT INTO training_requests VALUES(Null, , '','2017-12-07 14:18:18',1, '')bad2017-12-07 14:18:55
+
+
+
+
+INSERT INTO node VALUES(Null, , '','2017-12-07 14:18:55',1, '')bad2017-12-07 14:19:12
+231
+231
+
+
+INSERT INTO node VALUES(Null, 231, '','2017-12-07 14:19:12',1, '')bad2017-12-07 14:24:45
+231
+INSERT INTO node VALUES(231, 1, 'Auckland','Pacific','Auckland', '', '')bad2017-12-07 14:27:42
+234
+INSERT INTO registered_nodes VALUES(234, 234, 're','wer','wer', '', '')good2017-12-07 14:48:01
+211
+INSERT INTO registered_nodes VALUES(211, qwe, 'qwe','wqe','we', '', '')bad2017-12-07 14:48:48
+231
+INSERT INTO registered_nodes VALUES(231, 1, 'wer','ewr','wer', '', '')good2017-12-07 14:49:42
+42
+INSERT INTO registered_nodes VALUES(42, 1, 'sda','asdasd','asd', '', '')good2017-12-07 14:50:15
+123
+INSERT INTO registered_nodes VALUES(123, 123, 'asd','ads','asd', '', '')good{"success":true,"data":["00077.1","00077.2","00077.3","null.1","null.2","null.3"]}2017-12-07 14:50:50
+234
+INSERT INTO registered_nodes VALUES(234, 3, 'wer','ewr','wer', '', '')good{2017-12-07 14:52:34
+34
+INSERT INTO registered_nodes VALUES(34, 43, 'sdf','sdf','sdf', '', '')goodd2017-12-07 14:53:48
+234
+INSERT INTO registered_nodes VALUES(234, 234, 'sdf','sdf','sdf', '', '')good2017-12-07 14:54:22
+4323
+INSERT INTO registered_nodes VALUES(4323, 4, 'dfs','sdf','s', '', '')good2017-12-07 14:54:41
+211
+INSERT INTO registered_nodes VALUES(211, sd, 'sdasd','asdsd','asd', '', '')bad{"success":true,"data":[]}2017-12-07 14:56:49
 205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-05 11:30:15',1, 'Tensorflow')good2017-12-05 11:36:03
+INSERT INTO registered_nodes VALUES(205, 123, 'SD','sdf','sdf', '', '')good{"success":true,"data":["HotWater","House","Lighting","Main","PhaseA","PhaseB","PhaseC","Solar","TempHouse"]}2017-12-07 14:57:35
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'D','sdf','sdgf', '', '')good{"success":true,"data":["HotWater","House","Lighting","Main","PhaseA","PhaseB","PhaseC","Solar","TempHouse"]}2017-12-07 14:58:43
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'asd','asd','d', '', '')good{"success":true,"data":["HotWater","House","Lighting","Main","PhaseA","PhaseB","PhaseC","Solar","TempHouse"]}2017-12-07 15:01:16
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'dsa','asdasd','s', '', '')good2017-12-07 15:02:40
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'asd','as','sda', '', '')good2017-12-07 15:11:43
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'sdasd','asd','asd', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-07 15:12:32
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'f','df','s', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-07 15:13:07
+242
+INSERT INTO registered_nodes VALUES(242, 1, 'sdf','dsf','f', '', '')good00731.100731.200731.300731.TPhase1Phase2Temperature2017-12-07 15:18:08
+126
+INSERT INTO registered_nodes VALUES(126, 1, 'ak','p','a', '', '')good/power/pcm/1/power/pcm/1?percentHangerHanger/PhaseAHanger/PhaseBHanger/PhaseCInverter1Inverter2Inverter3Inverter4Inverter52017-12-07 15:18:19
 
-176
-00542.3
+126
+Hanger
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, '00542.3','2017-12-05 11:36:03',1, 'Tensorflow')good2017-12-05 11:38:09
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-07 15:18:19',1, 'Tensorflow')good2017-12-07 15:33:04
 
-176
-00542.1
+126
+Hanger
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, '00542.1','2017-12-05 11:38:09',1, 'Tensorflow')good2017-12-05 11:43:54
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-07 15:33:04',1, 'Tensorflow')good2017-12-07 15:36:26
 
-176
-00542.T
+126
+Hanger
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, '00542.T','2017-12-05 11:43:54',1, 'Tensorflow')good2017-12-05 11:44:55
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-07 15:36:26',1, 'Tensorflow')good2017-12-07 15:52:49
 
-176
+126
+Inverter1
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 126, 'Inverter1','2017-12-07 15:52:49',1, 'Tensorflow')good2017-12-07 19:52:00
+
+242
 Phase1
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, 'Phase1','2017-12-05 11:44:55',1, 'Tensorflow')good2017-12-05 11:58:16
+INSERT INTO training_requests VALUES(Null, 242, 'Phase1','2017-12-07 19:52:00',1, 'Tensorflow')good2017-12-07 21:34:12
 
-176
-00542.T
+126
+Inverter1
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, '00542.T','2017-12-05 11:58:16',1, 'Tensorflow')good2017-12-05 12:27:09
-
-176
-Phase3
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 176, 'Phase3','2017-12-05 12:27:09',1, 'Tensorflow')good2017-12-05 14:13:38
-
-205
-HotWater
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'HotWater','2017-12-05 14:13:38',1, 'Tensorflow')good
+INSERT INTO training_requests VALUES(Null, 126, 'Inverter1','2017-12-07 21:34:12',1, 'Tensorflow')good

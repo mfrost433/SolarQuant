@@ -1,0 +1,29 @@
+
+
+<html>
+<head>
+
+<title>solarquant.Admin</title>
+<link href='../../css/solarStyle.css' type='text/css' rel='stylesheet'>
+<link href='../../css/bootstrap.min.css' type='text/css'
+	rel='stylesheet'>
+<link href='../../css/bootstrap-theme.min.css' type='text/css'
+	rel='stylesheet'>
+<script src='../../js/bootstrap.min.js'></script>
+<link href='../../includes/calendar.css' rel='stylesheet'
+	type='text/css' />
+<script language='javascript' src='../../includes/calendar.js'></script>
+
+</head>
+<body bgcolor='#ffffff'>
+
+<?php
+$json = file_get_contents("https://data.solarnetwork.net/solarquery/api/v1/pub/range/sources?nodeId=205");
+$jsonData = json_decode($json);
+echo ($jsonData->data[0]);
+
+?>
+
+</body>
+
+</html>

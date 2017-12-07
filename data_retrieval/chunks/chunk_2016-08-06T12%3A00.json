@@ -1,0 +1,64 @@
+{
+    "data": {
+        "returnedResultCount": 6, 
+        "startingOffset": 0, 
+        "totalResults": 6, 
+        "results": [
+            {
+                "wattHours": 4070.907, 
+                "watts": 13181.722, 
+                "created": "2016-08-08 23:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2016-08-09", 
+                "localTime": "11:00"
+            }, 
+            {
+                "wattHours": 5179.093, 
+                "watts": 7892.917, 
+                "created": "2016-08-09 00:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2016-08-09", 
+                "localTime": "12:00"
+            }, 
+            {
+                "wattHours": 3869.937, 
+                "watts": 4392.426, 
+                "created": "2016-08-09 02:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2016-08-09", 
+                "localTime": "14:00"
+            }, 
+            {
+                "wattHours": 3697.029, 
+                "watts": 3695.705, 
+                "created": "2016-08-09 03:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2016-08-09", 
+                "localTime": "15:00"
+            }, 
+            {
+                "wattHours": 1495.027, 
+                "watts": 1494.82, 
+                "created": "2016-08-09 04:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2016-08-09", 
+                "localTime": "16:00"
+            }, 
+            {
+                "wattHours": 117.007, 
+                "watts": 151.917, 
+                "created": "2016-08-09 05:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2016-08-09", 
+                "localTime": "17:00"
+            }
+        ]
+    }, 
+    "success": true
+}

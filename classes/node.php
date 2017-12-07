@@ -41,17 +41,9 @@ class Node
     
     function constructFromRow($row)
     {
-    	$this->id = $row["node_id"];
-    	$this->location = $row["location"];
-		$this->wcIdentifier = $row["wc_identifier"];
-        $this->timeZone = $row["time_zone"];
-        $this->latitude = $row["latitude"];
-        $this->longitude = $row["longitude"];
-		$this->totalWatts = $row["total_watts"];
-		$this->scalingFactor = $row["scaling_factor"];
-		$this->isSubscribedForTraining = $row["is_subscribed_for_training"];
-		$this->weatherNodeId = $row["weather_node_id"];
-		$this->subscribedSourceIds = $row["subscribed_source_ids"];
+    	$this->id = $row["NODE_ID"];
+    	$this->location = $row["LOCATION"];
+        $this->timeZone = $row["TIMEZONE"];
 
     }
    
@@ -162,10 +154,6 @@ class Node
 			echo("<td align='center'>\n");
 				echo ("TIMEZONE");
 			echo("</td>\n");
-
-			echo("<td align='center'>\n");
-				echo ("TRAINING");
-			echo("</td>\n");
 			
 			echo("<td align='center'>\n");
 				echo ("ACTION");
@@ -203,6 +191,8 @@ class Node
 		{
 			$sql = "select node_id, location, wc_identifier, time_zone, latitude, longitude, is_subscribed_for_training from node where node_type_id = 2 order by location asc";
 		}
+		
+		$sql = "SELECT * FROM registered_nodes";
 		
 		//debug
 		//echo("in Node:ListAll sql:". $sql. "<br>");
@@ -251,10 +241,6 @@ class Node
 			
 				echo("<td align='center'>\n");
 					echo ($theNode->timeZone);
-				echo("</td>\n");
-
-				echo("<td align='center'>\n");
-					echo ($theNode->isSubscribedForTraining);
 				echo("</td>\n");
 				
 				echo("<td align='center'>\n");
@@ -1000,6 +986,7 @@ function daysDifference($startDate, $endDate)
     
     function add()
     {
+
         //try to get a database connection if there isn't one already open
     	if ($this->dbLink == "")
     	{
@@ -1477,7 +1464,7 @@ function daysDifference($startDate, $endDate)
 		//$result->data_seek(0);
     	    
     	    // setup sql
-		$sql = "delete from node where node_id = ".$this->id;
+		$sql = "delete from registered_nodes where NODE_ID = ".$this->id;
 
 		
 		//echo("delete sql:". $sql. "<br>");

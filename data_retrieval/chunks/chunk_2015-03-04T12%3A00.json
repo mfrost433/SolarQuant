@@ -1,0 +1,388 @@
+{
+    "data": {
+        "returnedResultCount": 42, 
+        "startingOffset": 0, 
+        "totalResults": 42, 
+        "results": [
+            {
+                "wattHours": 354.99, 
+                "watts": 355.607, 
+                "created": "2015-03-04 18:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "07:00"
+            }, 
+            {
+                "wattHours": 3454.93, 
+                "watts": 3453.525, 
+                "created": "2015-03-04 19:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "08:00"
+            }, 
+            {
+                "wattHours": 8329.925, 
+                "watts": 8362.639, 
+                "created": "2015-03-04 20:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "09:00"
+            }, 
+            {
+                "wattHours": 9573.06, 
+                "watts": 9570.541, 
+                "created": "2015-03-04 21:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "10:00"
+            }, 
+            {
+                "wattHours": 9485.043, 
+                "watts": 9664.262, 
+                "created": "2015-03-04 22:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "11:00"
+            }, 
+            {
+                "wattHours": 11796.998, 
+                "watts": 11641.328, 
+                "created": "2015-03-04 23:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "12:00"
+            }, 
+            {
+                "wattHours": 7072.84, 
+                "watts": 6962.344, 
+                "created": "2015-03-05 00:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "13:00"
+            }, 
+            {
+                "wattHours": 10610.154, 
+                "watts": 10715.607, 
+                "created": "2015-03-05 01:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "14:00"
+            }, 
+            {
+                "wattHours": 8773.999, 
+                "watts": 8655.262, 
+                "created": "2015-03-05 02:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "15:00"
+            }, 
+            {
+                "wattHours": 8869.982, 
+                "watts": 8610.836, 
+                "created": "2015-03-05 03:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "16:00"
+            }, 
+            {
+                "wattHours": 9789.98, 
+                "watts": 9709.246, 
+                "created": "2015-03-05 04:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "17:00"
+            }, 
+            {
+                "wattHours": 4937.082, 
+                "watts": 4931.738, 
+                "created": "2015-03-05 05:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "18:00"
+            }, 
+            {
+                "wattHours": 503.016, 
+                "watts": 505.18, 
+                "created": "2015-03-05 06:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "19:00"
+            }, 
+            {
+                "wattHours": 0, 
+                "watts": 0, 
+                "created": "2015-03-05 07:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-05", 
+                "localTime": "20:00"
+            }, 
+            {
+                "wattHours": 354.98, 
+                "watts": 369.517, 
+                "created": "2015-03-05 18:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "07:00"
+            }, 
+            {
+                "wattHours": 2685.915, 
+                "watts": 2675.164, 
+                "created": "2015-03-05 19:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "08:00"
+            }, 
+            {
+                "wattHours": 4970.036, 
+                "watts": 4858.164, 
+                "created": "2015-03-05 20:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "09:00"
+            }, 
+            {
+                "wattHours": 4205.03, 
+                "watts": 4264.098, 
+                "created": "2015-03-05 21:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "10:00"
+            }, 
+            {
+                "wattHours": 6259.956, 
+                "watts": 6189.475, 
+                "created": "2015-03-05 22:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "11:00"
+            }, 
+            {
+                "wattHours": 4954.983, 
+                "watts": 4976.738, 
+                "created": "2015-03-05 23:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "12:00"
+            }, 
+            {
+                "wattHours": 8615.996, 
+                "watts": 8669.246, 
+                "created": "2015-03-06 00:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "13:00"
+            }, 
+            {
+                "wattHours": 9392.044, 
+                "watts": 9124.672, 
+                "created": "2015-03-06 01:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "14:00"
+            }, 
+            {
+                "wattHours": 4018.002, 
+                "watts": 4027.852, 
+                "created": "2015-03-06 02:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "15:00"
+            }, 
+            {
+                "wattHours": 3225.025, 
+                "watts": 3227.131, 
+                "created": "2015-03-06 03:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "16:00"
+            }, 
+            {
+                "wattHours": 2711.007, 
+                "watts": 2703.754, 
+                "created": "2015-03-06 04:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "17:00"
+            }, 
+            {
+                "wattHours": 1560.015, 
+                "watts": 1560.443, 
+                "created": "2015-03-06 05:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "18:00"
+            }, 
+            {
+                "wattHours": 317.011, 
+                "watts": 320.213, 
+                "created": "2015-03-06 06:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "19:00"
+            }, 
+            {
+                "wattHours": 0, 
+                "watts": 0, 
+                "created": "2015-03-06 07:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-06", 
+                "localTime": "20:00"
+            }, 
+            {
+                "wattHours": 380.985, 
+                "watts": 389.233, 
+                "created": "2015-03-06 18:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "07:00"
+            }, 
+            {
+                "wattHours": 1933.976, 
+                "watts": 1936.049, 
+                "created": "2015-03-06 19:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "08:00"
+            }, 
+            {
+                "wattHours": 4674.958, 
+                "watts": 4673.984, 
+                "created": "2015-03-06 20:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "09:00"
+            }, 
+            {
+                "wattHours": 8412.952, 
+                "watts": 8417.639, 
+                "created": "2015-03-06 21:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "10:00"
+            }, 
+            {
+                "wattHours": 8644.034, 
+                "watts": 8531.148, 
+                "created": "2015-03-06 22:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "11:00"
+            }, 
+            {
+                "wattHours": 5560.013, 
+                "watts": 5683.951, 
+                "created": "2015-03-06 23:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "12:00"
+            }, 
+            {
+                "wattHours": 8847.958, 
+                "watts": 8601.443, 
+                "created": "2015-03-07 00:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "13:00"
+            }, 
+            {
+                "wattHours": 8590.982, 
+                "watts": 8652.984, 
+                "created": "2015-03-07 01:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "14:00"
+            }, 
+            {
+                "wattHours": 7052.094, 
+                "watts": 7034.59, 
+                "created": "2015-03-07 02:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "15:00"
+            }, 
+            {
+                "wattHours": 2511.027, 
+                "watts": 2510.836, 
+                "created": "2015-03-07 03:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "16:00"
+            }, 
+            {
+                "wattHours": 2461.93, 
+                "watts": 2466.967, 
+                "created": "2015-03-07 04:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "17:00"
+            }, 
+            {
+                "wattHours": 4546.077, 
+                "watts": 4551.852, 
+                "created": "2015-03-07 05:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "18:00"
+            }, 
+            {
+                "wattHours": 696.012, 
+                "watts": 691.475, 
+                "created": "2015-03-07 06:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "19:00"
+            }, 
+            {
+                "wattHours": 0, 
+                "watts": 0, 
+                "created": "2015-03-07 07:00:00.000Z", 
+                "sourceId": "Inverter1", 
+                "nodeId": 126, 
+                "localDate": "2015-03-07", 
+                "localTime": "20:00"
+            }
+        ]
+    }, 
+    "success": true
+}
