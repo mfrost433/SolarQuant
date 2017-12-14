@@ -7,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Timestamp;
+import java.util.Calendar;
 import net.solarquant.util.StatusEnum;
 
 /**
@@ -37,21 +39,27 @@ public class DBHandler {
 		}
 	}
 
-	// gets the oldest request, as the requests are processed in LIFO queue
+	// gets the oldest request, as the requests are processed in FIFO queue
 	public Request getOldestRequest(String tableName, StatusEnum status) {
 		Statement stmt = null;
 		try {
 			String query = "SELECT * FROM %s WHERE STATUS = %s " + "ORDER BY DATE_REQUESTED ASC LIMIT 1";
-			query = String.format(query, tableName, status.getStateId(), tableName);
+			query = String.format(query, tableName, status.getStateId());
 			stmt = conn_.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
 
 			if ( rs.next() == false ) {
 				return null;
 			} else {
-				return new Request(rs.getDate("DATE_REQUESTED"), rs.getString("REQUEST_ENGINE"),
-						rs.getInt("STATUS"), rs.getInt("REQUEST_ID"), rs.getInt("NODE_ID"),
-						rs.getString("SOURCE_ID"));
+				if(tableName.contains("training")) {
+					return new Request(rs.getDate("DATE_REQUESTED"), rs.getString("REQUEST_ENGINE"),
+							rs.getInt("STATUS"), rs.getInt("REQUEST_ID"), rs.getInt("NODE_ID"),
+							rs.getString("SOURCE_ID"),Request.Type.TRAINING);
+				}else {
+					return new Request(rs.getDate("DATE_REQUESTED"), rs.getString("REQUEST_ENGINE"),
+							rs.getInt("STATUS"), rs.getInt("REQUEST_ID"), rs.getInt("NODE_ID"),
+							rs.getString("SOURCE_ID"),Request.Type.PREDICTION);
+				}
 			}
 
 		} catch ( SQLException e ) {
@@ -76,22 +84,23 @@ public class DBHandler {
 	}
 	// gets the most recent date for the addition of new data for a specific node+source
 	// prevents the unnecessary downloading of existing data
-	public Date getLatestTrainingDataDate(Request r) {
+	public Timestamp getLatestTrainingDataDate(Request r) {
 		String query = "SELECT ENTRY_DATE FROM %s WHERE NODE_ID = %s AND SOURCE_ID = '%s' "
 				+ "ORDER BY ENTRY_DATE DESC LIMIT 1";
-
-		if ( r.getEngineName().equalsIgnoreCase("tensorflow") ) {
-			query = String.format(query, "tensorflow_training_input", r.getNodeId(), r.getSourceId());
-		}
-
+		
+		String tableName = r.getEngineName().toLowerCase() + "_" + r.getType().getName() + "_input";
+		
+		query = String.format(query, tableName, r.getNodeId(), r.getSourceId());
+		System.out.println(query);
 		Statement stmt;
 		try {
 			stmt = conn_.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
 
 			if ( rs.next() == true ) {
-				Date out = rs.getDate("ENTRY_DATE");
-				return out;
+				Timestamp out = rs.getTimestamp("ENTRY_DATE");
+				Timestamp t = new Timestamp(out.getTime() + Calendar.getInstance().getTimeZone().getOffset(out.getTime()));
+				return t;
 			} else {
 				return null;
 			}
@@ -102,4 +111,47 @@ public class DBHandler {
 		}
 
 	}
+
+	public java.util.Date getLastDatumCreatedDate(Request r) {
+		String query = "SELECT DATE_CREATED FROM %s WHERE NODE_ID = %s AND SOURCE_ID = '%s' "
+				+ "ORDER BY ENTRY_DATE DESC LIMIT 1";
+
+		if ( r.getEngineName().equalsIgnoreCase("tensorflow") ) {
+			query = String.format(query, "tensorflow_training_input", r.getNodeId(), r.getSourceId());
+		}
+		Statement stmt;
+		try {
+			stmt = conn_.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			if ( rs.next() == true ) {
+				Timestamp out = rs.getTimestamp("ENTRY_DATE");
+				Timestamp t = new Timestamp(out.getTime() + Calendar.getInstance().getTimeZone().getOffset(out.getTime()));
+				return t;
+			} else {
+				return null;
+			}
+
+		} catch ( SQLException e ) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

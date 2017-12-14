@@ -23,6 +23,7 @@ class DataRetriever():
         self.srcId = srcId
         self.chunksFolder = os.path.join(directory, "chunks/")
         self.weatherFolder = os.path.join(directory, "weather/")
+
         if((startDate == None) | (endDate == None)):
             startDate, endDate = self.getInterval()
             if(datetime.datetime.strptime(startDate, "%Y-%m-%d %M:%S") < datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")):
@@ -32,8 +33,8 @@ class DataRetriever():
             self.endDate = datetime.datetime.strptime(endDate, "%Y-%m-%d %M:%S")
 
         else:
-            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d") - datetime.timedelta(days=14)
-            self.endDate = datetime.datetime.strptime(endDate,"%Y-%m-%d")
+            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d:%H")
+            self.endDate = datetime.datetime.strptime(endDate,"%Y-%m-%d:%H")
 
     def getChunkEndDate(self, current, endDate, minInterval):
         out = current + datetime.timedelta(minutes=500*minInterval)
@@ -46,14 +47,14 @@ class DataRetriever():
 
         chunkStart = self.startDate
         while (chunkStart < self.endDate):
-            chunkEnd = self.getChunkEndDate(chunkStart,self.endDate, 10)
+            chunkEnd = self.getChunkEndDate(chunkStart,self.endDate, 20)
 
             startString = datetime.datetime.strftime(chunkStart,"%Y-%m-%dT12%%3A00")
 
             endString = datetime.datetime.strftime(chunkEnd, "%Y-%m-%dT12%%3A00")
 
             request = Request(self.PREFIX + "/solarquery/api/v1/pub/datum/"
-                              "list?nodeId="+self.nodeId+"&aggregation=Hour&startDate="+
+                              "list?nodeId="+self.nodeId+"&aggregation=ThirtyMinute&startDate="+
                               startString+"&endDate="+endString+"&sourceIds="+self.srcId+"&max=5000000")
             data = ""
             try:

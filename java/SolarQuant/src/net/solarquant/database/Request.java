@@ -20,8 +20,24 @@ public class Request {
 	private StatusEnum status_;
 	private int requestId_, nodeId_;
 	private String sourceId_;
+	private Type type_;
+	
+	public static enum Type{
+		
+		PREDICTION("prediction"), TRAINING("training");
+		String name_;
+		
+		Type(String name) {
+			name_ = name;
+		}
+		
+		public String getName() {
+			return name_;
+		}
+	}
 
-	public Request(Date date, String engine, int status, int requestId, int nodeId, String sourceId) {
+
+	public Request(Date date, String engine, int status, int requestId, int nodeId, String sourceId, Type type) {
 
 		date_ = date;
 		engine_ = engine;
@@ -29,6 +45,7 @@ public class Request {
 		requestId_ = requestId;
 		nodeId_ = nodeId;
 		sourceId_ = sourceId;
+		type_ = type;
 
 	}
 
@@ -55,10 +72,19 @@ public class Request {
 	public String getSourceId() {
 		return sourceId_;
 	}
+	
+	public Type getType() {
+		return type_;
+	}
+	
 
 	public void updateStatus(StatusEnum newStatus) {
-
-		d.updateRequestStatus("training_requests", requestId_, newStatus.getStateId());
+		
+		if(type_ == Type.TRAINING) {
+			d.updateRequestStatus("training_requests", requestId_, newStatus.getStateId());
+		}else if(type_ == Type.PREDICTION){
+			d.updateRequestStatus("prediction_requests", requestId_, newStatus.getStateId());
+		}
 
 	}
 

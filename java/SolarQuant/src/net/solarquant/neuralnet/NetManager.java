@@ -1,11 +1,8 @@
-
 package net.solarquant.neuralnet;
 
-public abstract class NetManager {
 
-	public abstract void manageJobs();
+public interface NetManager {
+	
+	public void manageJobs();
 
-	void getDatabase() {
-
-	}
 }

@@ -1,484 +1,837 @@
 
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:local variable 'e' referenced before assignment
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:cannot concatenate 'str' and 'int' objects
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list index out of range
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:'wattHours'
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:list indices must be integers, not float
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
-ERROR:executing query
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-12-05 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2017-12-03 00:00:00' for key 'PRIMARY'
 ERROR:[Errno 32] Broken pipe
-ERROR:
-started!!!!!!!!!!!
-ERROR:created weather sets
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2015-12-05 12:00:00' for key 'PRIMARY'
 ERROR:[Errno 32] Broken pipe
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2015-12-05 12:00:00' for key 'PRIMARY'
+ERROR:[Errno 32] Broken pipe
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2015-12-05 12:00:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2015-12-05 12:00:00' for key 'PRIMARY'
+ERROR:[Errno 32] Broken pipe
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2015-12-05 12:00:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2015-11-19 12:00:00' for key 'PRIMARY'
+ERROR:1062 (23000): Duplicate entry '205-House-2017-12-03 00:00:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:[Errno 32] Broken pipe
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:00:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-11-19 00:30:00' for key 'PRIMARY'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:'sky'
+ERROR:1062 (23000): Duplicate entry '2015-01-01 00:30:00' for key 'PRIMARY'
+ERROR:'wattHours'
+ERROR:'wattHours'

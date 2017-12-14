@@ -24,7 +24,6 @@ public enum StatusEnum {
 		return stateId_;
 	}
 
-
 	//generate an enum from an integer input
 	public static StatusEnum fromInt(int i) {
 		for (StatusEnum e : StatusEnum.values()) {
