@@ -129,4 +129,136 @@ INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-14 12:05:29',1,
 149
 Solar
 Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-14 13:03:50',1, 'Tensorflow')good
+INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-14 13:03:50',1, 'Tensorflow')good2017-12-14 13:38:20
+
+205
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-14 13:38:20',1, 'Tensorflow')good2017-12-14 13:55:26
+
+205
+Solar
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-14 13:55:26',1, 'Tensorflow')good2017-12-14 14:06:49
+
+205
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-14 14:06:49',1, 'Tensorflow')good2017-12-14 14:14:37
+
+205
+Solar
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-14 14:14:37',1, 'Tensorflow')good2017-12-14 15:13:19
+275
+INSERT INTO registered_nodes VALUES(275, 1, 'dsf','fg','f', '', '')goodChillerDownstairsLightingDownstairsMainSupplyM1P1M1P2M1P3MainMain2Main3Main4Main5Main6Main7Main8UpstairsLighting1UpstairsLighting2UpstairsMainSupply2017-12-14 15:13:55
+
+275
+UpstairsMainSupply
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-14 15:13:55',1, 'Tensorflow')good2017-12-14 15:20:10
+
+275
+UpstairsMainSupply
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-14 15:20:10',1, 'Tensorflow')good2017-12-14 15:59:10
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'Ak','a','d', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-14 16:00:15
+205
+INSERT INTO registered_nodes VALUES(205, 1, 'asd','d','d', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-14 16:00:28
+126
+INSERT INTO registered_nodes VALUES(126, 1, 'sdasd','asd','d', '', '')good/power/pcm/1/power/pcm/1?percentHangerHanger/PhaseAHanger/PhaseBHanger/PhaseCInverter1Inverter2Inverter3Inverter4Inverter52017-12-14 16:00:38
+
+126
+Hanger
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-14 16:00:38',1, 'Tensorflow')good2017-12-14 16:18:02
+
+126
+Hanger
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 126, 'Hanger','2017-12-14 16:18:02',1, 'Tensorflow')good2017-12-15 09:33:15
+
+149
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 09:33:15',1, 'Tensorflow')good2017-12-15 10:10:24
+
+149
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 10:10:24',1, 'Tensorflow')good2017-12-15 10:11:34
+
+149
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 10:11:34',1, 'Tensorflow')good2017-12-15 10:18:13
+
+149
+Solar
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-15 10:18:13',1, 'Tensorflow')good2017-12-15 12:51:31
+147
+INSERT INTO registered_nodes VALUES(147, 1, 'sdasdasd','sad','sad', '', '')good00077.100077.200077.300077.TPhaseAPhaseBPhaseC2017-12-15 12:51:43
+233
+INSERT INTO registered_nodes VALUES(233, 1, 'sdasdSD','D','d', '', '')goodABCMainSolar_SMA2017-12-15 12:52:03
+
+233
+Solar_SMA
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 233, 'Solar_SMA','2017-12-15 12:52:03',1, 'Tensorflow')good2017-12-15 13:24:03
+
+147
+00077.1
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 147, '00077.1','2017-12-15 13:24:03',1, 'Tensorflow')good2017-12-15 13:24:17
+
+205
+HotWater
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'HotWater','2017-12-15 13:24:17',1, 'Tensorflow')good2017-12-15 13:47:48
+
+205
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-15 13:47:48',1, 'Tensorflow')good2017-12-15 14:05:15
+
+149
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 14:05:15',1, 'Tensorflow')good2017-12-15 14:17:16
+
+149
+Solar
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-15 14:17:16',1, 'Tensorflow')good2017-12-15 14:37:10
+
+275
+UpstairsMainSupply
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-15 14:37:10',1, 'Tensorflow')good2017-12-15 14:43:43
+
+275
+UpstairsMainSupply
+Tensorflow
+INSERT INTO prediction_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-15 14:43:43',1, 'Tensorflow')good2017-12-15 15:25:05
+
+205
+House
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-15 15:25:05',1, 'Tensorflow')good2017-12-15 15:44:25
+
+275
+UpstairsMainSupply
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-15 15:44:25',1, 'Tensorflow')good2017-12-15 15:44:32
+
+205
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-15 15:44:32',1, 'Tensorflow')good2017-12-15 15:44:38
+
+149
+Solar
+Tensorflow
+INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 15:44:38',1, 'Tensorflow')good

@@ -82,6 +82,9 @@ def updateWeather():
                 data.append(tempArr)
         data = interpolate(data)
         cursor = cnx.cursor()
+        query = "DELETE FROM yr_weather WHERE 1"
+
+        cursor.execute(query)
         query = "INSERT INTO yr_weather VALUES (%s, %s, %s, %s, %s, %s, %s)"
         try:
             cursor.executemany(query, data)
@@ -178,29 +181,27 @@ def addPredictionInput(nodeId, srcId, endDate=datetime.datetime.today(), startDa
     j = 0
 
     def getWeatherForDate(date):
-     	queryWeather = "SELECT PREDICTION_DATE,TEMP,CLOUDINESS FROM yr_weather WHERE PREDICTION_DATE = '" + str(date)+"'"
+     	queryWeather = "SELECT PREDICTION_DATE,TEMP,HUMIDITY,PRESSURE FROM yr_weather WHERE PREDICTION_DATE = '" + str(date)+"'"
         cursor.execute(queryWeather)
         dataW = cursor.fetchall()
         return dataW
     input = []
     count = 0
-    #print(data)
     for i in range(len(data) - 2):
         if(data[i][0] > startDate):
 
             if(data[i+1][0] == data[i][0] - datetime.timedelta(days=7)):
                 predictionDate = data[i][0] + datetime.timedelta(days=7)
                 weatherData = getWeatherForDate(predictionDate)
-
                 try:
                     input = input + [(nodeId,srcId,predictionDate, datetime.datetime.utcnow(),
-                    data[i][1],data[i+1][1],weatherData[0][1],float(weatherData[0][2])/100)]
+                    data[i][1],data[i+1][1],float(weatherData[0][3]), float(weatherData[0][2]),float(weatherData[0][1]))]
 
                 except Exception as e:
                     #tb.print_exc(e)
                     count+=1
-    query4 = ("INSERT INTO tensorflow_prediction_input "
-             "VALUES (%s,%s,%s, %s, %s, %s, %s, %s)")
+    query4 = ("INSERT INTO prediction_input "
+             "VALUES (%s,%s,%s, %s, %s, %s, %s, %s,%s)")
     try:
         cursor.executemany(query4,input)
     except Exception as e:

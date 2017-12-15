@@ -87,9 +87,9 @@ public class DBHandler {
 	public Timestamp getLatestTrainingDataDate(Request r) {
 		String query = "SELECT ENTRY_DATE FROM %s WHERE NODE_ID = %s AND SOURCE_ID = '%s' "
 				+ "ORDER BY ENTRY_DATE DESC LIMIT 1";
-		
-		String tableName = r.getEngineName().toLowerCase() + "_" + r.getType().getName() + "_input";
-		
+
+		String tableName = r.getType().getName() + "_input";
+
 		query = String.format(query, tableName, r.getNodeId(), r.getSourceId());
 		System.out.println(query);
 		Statement stmt;
@@ -114,18 +114,16 @@ public class DBHandler {
 
 	public java.util.Date getLastDatumCreatedDate(Request r) {
 		String query = "SELECT DATE_CREATED FROM %s WHERE NODE_ID = %s AND SOURCE_ID = '%s' "
-				+ "ORDER BY ENTRY_DATE DESC LIMIT 1";
+				+ "ORDER BY DATE_CREATED DESC LIMIT 1";
 
-		if ( r.getEngineName().equalsIgnoreCase("tensorflow") ) {
-			query = String.format(query, "tensorflow_training_input", r.getNodeId(), r.getSourceId());
-		}
+		query = String.format(query, "node_datum", r.getNodeId(), r.getSourceId());
 		Statement stmt;
 		try {
 			stmt = conn_.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
 
 			if ( rs.next() == true ) {
-				Timestamp out = rs.getTimestamp("ENTRY_DATE");
+				Timestamp out = rs.getTimestamp("DATE_CREATED");
 				Timestamp t = new Timestamp(out.getTime() + Calendar.getInstance().getTimeZone().getOffset(out.getTime()));
 				return t;
 			} else {

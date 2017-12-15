@@ -27,8 +27,8 @@
 		crossorigin=""></script>
 	<script type="text/javascript">
 	
-function deleteRequest(reqId){	
-	$.ajax({
+function deleteRequest2(reqId){	
+ 	$.ajax({
 		type: "POST",
 		url: "deletePredictionRequest.php",
 		data:"value="+reqId,
@@ -36,6 +36,7 @@ function deleteRequest(reqId){
 			location.reload();
 		}
 		});
+
 }
 
 function viewCorrelation(reqId){

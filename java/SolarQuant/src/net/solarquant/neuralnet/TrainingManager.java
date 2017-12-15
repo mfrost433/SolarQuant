@@ -27,7 +27,7 @@ public abstract class TrainingManager implements NetManager{
 	private String engineName_;
 	protected Logger logger = Logger.getLogger(TrainingManager.class);
 	protected String location;
-	protected DBHandler db = new DBHandler();
+	protected DBHandler db = new DBHandler();	
 
 	public TrainingManager(String engineName) {
 		engineName_ = engineName;
@@ -58,7 +58,6 @@ public abstract class TrainingManager implements NetManager{
 
 	@Override
 	public void manageJobs() {
-
 		int reqId;
 		String engine;
 
@@ -78,8 +77,8 @@ public abstract class TrainingManager implements NetManager{
 			} else {
 				return;
 			}
-		}
-
+		}		
+		
 		//Next check for requests that are in retrieving data state.
 		logger.info(engineName_ + " - Checking data retrieval jobs...");
 		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.RETRIEVING_DATA);

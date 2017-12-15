@@ -3,7 +3,6 @@ import json
 
 import datetime
 import os
-
 directory = os.path.dirname(__file__)
 print(directory)
 class DataRetriever():
@@ -23,18 +22,29 @@ class DataRetriever():
         self.srcId = srcId
         self.chunksFolder = os.path.join(directory, "chunks/")
         self.weatherFolder = os.path.join(directory, "weather/")
+        startDateI, endDateI = self.getInterval()
+
+        #if the difference between the last datum and the current date is too large, fail.
+        if(abs((datetime.datetime.strptime(endDateI, "%Y-%m-%d %M:%S") - datetime.datetime.utcnow()).days) > 15):
+            print(datetime.datetime.strptime(endDateI, "%Y-%m-%d %M:%S") - datetime.datetime.utcnow().days)
+            print(startDateI)
+            print(datetime.datetime.utcnow())
+
+
+            raise Exception
+
 
         if((startDate == None) | (endDate == None)):
-            startDate, endDate = self.getInterval()
-            if(datetime.datetime.strptime(startDate, "%Y-%m-%d %M:%S") < datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")):
+
+            if(datetime.datetime.strptime(startDateI, "%Y-%m-%d %M:%S") < datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")):
                 self.startDate = datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")
             else:
-                self.startDate = datetime.datetime.strptime(startDate, "%Y-%m-%d %M:%S")
-            self.endDate = datetime.datetime.strptime(endDate, "%Y-%m-%d %M:%S")
+                self.startDate = datetime.datetime.strptime(startDateI, "%Y-%m-%d %M:%S")
+            self.endDate = datetime.datetime.strptime(endDateI, "%Y-%m-%d %M:%S")
 
         else:
-            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d:%H")
-            self.endDate = datetime.datetime.strptime(endDate,"%Y-%m-%d:%H")
+            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d:%H:%M")
+            self.endDate = datetime.datetime.strptime(endDate,"%Y-%m-%d:%H:%M")
 
     def getChunkEndDate(self, current, endDate, minInterval):
         out = current + datetime.timedelta(minutes=500*minInterval)

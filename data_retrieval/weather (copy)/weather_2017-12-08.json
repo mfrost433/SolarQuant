@@ -1,8 +1,8 @@
 {
     "data": {
-        "returnedResultCount": 287, 
+        "returnedResultCount": 332, 
         "startingOffset": 0, 
-        "totalResults": 287, 
+        "totalResults": 332, 
         "results": [
             {
                 "temp": 23.0, 
@@ -2877,9 +2877,11 @@
                 "localTime": "23:30"
             }, 
             {
-                "temp": 19.0, 
+                "temp": 18.0, 
                 "created": "2017-12-13 11:00:00.000Z", 
                 "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "humidity": 70, 
                 "locationId": 301025, 
                 "localDate": "2017-12-14", 
                 "localTime": "00:00"
@@ -3144,6 +3146,492 @@
                 "humidity": 52, 
                 "locationId": 301025, 
                 "localDate": "2017-12-14", 
+                "localTime": "12:00"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-13 23:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Fine", 
+                "humidity": 57, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "12:30"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 00:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 57, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "13:00"
+            }, 
+            {
+                "temp": 21.0, 
+                "created": "2017-12-14 00:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 56, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "13:30"
+            }, 
+            {
+                "temp": 20.0, 
+                "created": "2017-12-14 01:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 52, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "14:00"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 01:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 53, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "14:30"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 02:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 50, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "15:00"
+            }, 
+            {
+                "temp": 24.0, 
+                "created": "2017-12-14 02:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101000, 
+                "sky": "Partly cloudy", 
+                "humidity": 56, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "15:30"
+            }, 
+            {
+                "temp": 25.0, 
+                "created": "2017-12-14 03:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101000, 
+                "sky": "Partly cloudy", 
+                "humidity": 56, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "16:00"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 03:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 53, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "16:30"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 04:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 51, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "17:00"
+            }, 
+            {
+                "temp": 18.0, 
+                "created": "2017-12-14 04:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 57, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "17:30"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 05:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 58, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "18:00"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 05:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 56, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "18:30"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 06:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 60, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "19:00"
+            }, 
+            {
+                "temp": 18.0, 
+                "created": "2017-12-14 06:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 58, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "19:30"
+            }, 
+            {
+                "temp": 18.0, 
+                "created": "2017-12-14 07:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 61, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "20:00"
+            }, 
+            {
+                "temp": 17.0, 
+                "created": "2017-12-14 07:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 66, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "20:30"
+            }, 
+            {
+                "temp": 16.0, 
+                "created": "2017-12-14 08:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 70, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "21:00"
+            }, 
+            {
+                "temp": 15.0, 
+                "created": "2017-12-14 08:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Fine", 
+                "humidity": 74, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "21:30"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 09:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Fine", 
+                "humidity": 77, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "22:00"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 09:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Fine", 
+                "humidity": 80, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "22:30"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 10:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Fine", 
+                "humidity": 80, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "23:00"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 10:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Fine", 
+                "humidity": 82, 
+                "locationId": 301025, 
+                "localDate": "2017-12-14", 
+                "localTime": "23:30"
+            }, 
+            {
+                "temp": 19.0, 
+                "created": "2017-12-14 11:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "00:00"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 11:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 84, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "00:30"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 12:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 85, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "01:00"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 12:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 86, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "01:30"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 13:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 87, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "02:00"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 13:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 87, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "02:30"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 14:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 88, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "03:00"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 14:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 89, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "03:30"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 15:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 91, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "04:00"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 15:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 92, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "04:30"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 16:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Partly cloudy", 
+                "humidity": 86, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "05:00"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 16:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 81, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "05:30"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 17:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 82, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "06:00"
+            }, 
+            {
+                "temp": 13.0, 
+                "created": "2017-12-14 17:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 87, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "06:30"
+            }, 
+            {
+                "temp": 14.0, 
+                "created": "2017-12-14 18:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 87, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "07:00"
+            }, 
+            {
+                "temp": 15.0, 
+                "created": "2017-12-14 18:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 79, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "07:30"
+            }, 
+            {
+                "temp": 17.0, 
+                "created": "2017-12-14 19:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 70, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "08:00"
+            }, 
+            {
+                "temp": 18.0, 
+                "created": "2017-12-14 19:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101700, 
+                "sky": "Partly cloudy", 
+                "humidity": 65, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "08:30"
+            }, 
+            {
+                "temp": 18.0, 
+                "created": "2017-12-14 20:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101600, 
+                "sky": "Partly cloudy", 
+                "humidity": 65, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "09:00"
+            }, 
+            {
+                "temp": 21.0, 
+                "created": "2017-12-14 20:30:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "atm": 101900, 
+                "sky": "Partly cloudy", 
+                "humidity": 60, 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "09:30"
+            }, 
+            {
+                "temp": 21.0, 
+                "created": "2017-12-14 21:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
+                "localTime": "10:00"
+            }, 
+            {
+                "temp": 22.0, 
+                "created": "2017-12-14 23:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "locationId": 301025, 
+                "localDate": "2017-12-15", 
                 "localTime": "12:00"
             }
         ]

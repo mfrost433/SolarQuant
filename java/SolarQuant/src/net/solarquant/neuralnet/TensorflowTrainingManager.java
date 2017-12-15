@@ -64,7 +64,7 @@ public class TensorflowTrainingManager extends TrainingManager{
 	protected void updateStoredData(Request r) {
 		Date lastDate = db.getLastDatumCreatedDate(r);
 		Date cDate = new Date();
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-M-dd:HH");
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-M-dd:HH:mm");
 		formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
 		
 		ProcessBuilder pb;
@@ -84,6 +84,7 @@ public class TensorflowTrainingManager extends TrainingManager{
 		
 		pb.directory(new File(location + "/../../data_retrieval"));
 		logger.info("running data retrieval python at location: " + location + "/../../data_retrieval");
+		logger.info("command = " + pb.command());
 
 		try {
 

@@ -70,6 +70,7 @@ public class TensorflowPredictionManager extends PredictionManager{
 
 	@Override
 	protected void updateStoredData(Request r) {
+		
 		Date lastDate = db.getLastDatumCreatedDate(r);
 		Date cDate = new Date();
 
@@ -85,7 +86,6 @@ public class TensorflowPredictionManager extends PredictionManager{
 			pb = new ProcessBuilder("python", "PredictionPopulator.py", "-r", "" + r.getRequestId(), "-s",
 					start, "-e", end);
 		}
-		System.out.println(pb.command());
 		pb.directory(new File(location + "/../../data_retrieval"));
 		logger.info("running data retrieval python at location: " + location + "/../../data_retrieval");
 
