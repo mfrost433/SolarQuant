@@ -21,7 +21,7 @@ public class TensorflowPredictionManager extends PredictionManager{
 
 	@Override
 	protected boolean hasManagedProcessRunComplete(Request r) {
-		String csvLocation = location + "/../../tensorflow/SolarQuant/src/prediction/" + r.getRequestId()+ "_prediction.csv";
+		String csvLocation = location + "/../../prediction_output/predictions/" + r.getRequestId()+ "_prediction.csv";
 		if ( new File(csvLocation).exists() ) {
 			return true;
 		}
@@ -88,6 +88,7 @@ public class TensorflowPredictionManager extends PredictionManager{
 		}
 		pb.directory(new File(location + "/../../data_retrieval"));
 		logger.info("running data retrieval python at location: " + location + "/../../data_retrieval");
+		logger.info(pb.command());
 
 		try {
 

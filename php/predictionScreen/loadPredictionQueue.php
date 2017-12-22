@@ -85,8 +85,8 @@ while ($row = $result->fetch_assoc()) {
     echo "<td>" . getCorrelationButton($row['STATUS'], $row['REQUEST_ID']) . 
     "  <button type='button' class='btn btn-danger btn-xs' 
             onclick='deleteRequest(" . $row['REQUEST_ID'] . ")'>Delete</button>            
-         </td>";
-    
+         ";
+    echo getRefreshButton($row['STATUS'], $row['REQUEST_ID'])."</td>";    
     echo "</tr>";
 }
 
@@ -94,12 +94,21 @@ function getCorrelationButton($num, $reqId)
 {
     $status = "";
     if ($num == 4) {
-        $status = " <button type='button' class='btn btn-warning btn-xs'
+        $status = " <button type='button' class='btn btn-success btn-xs'
        onclick='viewCorrelation(" . $reqId . ")'>Correlation</button>";
     } else {
         $status = " <button type='button' class='btn btn-warning btn-xs'>Correlation</button>";
     }
     return $status;
+}
+
+function getRefreshButton($status, $reqId){
+    
+    if($status == 4){
+        return " <button type='button' class='btn btn-warning btn-xs' onclick='refresh(" . $reqId . ")'>Refresh</button>";
+    }
+    return " <button type='button' class='btn btn-warning btn-xs'>Refresh</button>";
+    
 }
 
 function getStatusButtonByNumber($num)

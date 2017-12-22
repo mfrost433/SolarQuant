@@ -19,22 +19,25 @@ public class EmergentTrainingManager extends TrainingManager{
 
 	@Override
 	protected boolean hasManagedProcessRunComplete(Request r) {
+		String loc = location + "/../../prediction_output/correlations/" + r.getRequestId()+ "_correlation.csv";
+		if(new File(loc).exists()) {
+			return true;
+		}
 		return false;
 	}
 
 	@Override
 	protected boolean startManagedProcess(Request r) {
-		
-		ProcessBuilder pb = new ProcessBuilder("runEmergentJava.sh");
-		pb.directory(new File("/../../emergent/"));
+		ProcessBuilder pb = new ProcessBuilder("python", "RunEmergent.py", "-r", ""+r.getRequestId());
+		pb.directory(new File(location + "/../../emergent/python/src"));
 
 		try {
-			pb.start();
+			Process p = pb.start();
 			return true;
 		} catch ( IOException e ) {
 
 			e.printStackTrace();
-		}
+		} 
 
 		return false;
 
@@ -46,6 +49,7 @@ public class EmergentTrainingManager extends TrainingManager{
 		if ( lastDate == null ) {
 			return false;
 		}
+
 		Date cDate = new Date();
 
 		if ( DateUtils.isSameDay(lastDate, cDate) ) {
@@ -57,7 +61,7 @@ public class EmergentTrainingManager extends TrainingManager{
 
 	@Override
 	protected void updateStoredData(Request r) {
-		Date lastDate = db.getLatestTrainingDataDate(r);
+		Date lastDate = db.getLastDatumCreatedDate(r);
 		Date cDate = new Date();
 
 		ProcessBuilder pb;
@@ -67,13 +71,13 @@ public class EmergentTrainingManager extends TrainingManager{
 
 		} else {
 
-			String start = new SimpleDateFormat("yyyy-M-dd:HH").format(lastDate);
-			String end = new SimpleDateFormat("yyyy-M-dd:HH").format(cDate);
+			String start = new SimpleDateFormat("yyyy-M-dd:HH:mm").format(lastDate);
+			String end = new SimpleDateFormat("yyyy-M-dd:HH:mm").format(cDate);
 			pb = new ProcessBuilder("python", "DatabasePopulator.py", "-r", "" + r.getRequestId(), "-s",
 					start, "-e", end);
 		}
 
-		
+		logger.info(pb.command());
 		pb.directory(new File(location + "/../../data_retrieval"));
 		logger.info("running data retrieval python at location: " + location + "/../../data_retrieval");
 

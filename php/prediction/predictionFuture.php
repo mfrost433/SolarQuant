@@ -112,9 +112,9 @@ var context = svg.append("g")
 
 var csvLink = "https://data.solarnetwork.net/solarquery/api/v1/pub/datum/list?"+
 		"nodeId=205&aggregation=Hour&startDate=2017-09-01T12%3A00&endDate=2017-10-01T12%3A00&sourceIds=Lighting";
-var csvPath = "../../tensorflow/SolarQuant/src/prediction/"+localStorage.getItem("reqId")+"_prediction.csv";
+var csvPath = "../../prediction_output/predictions/"+localStorage.getItem("reqId")+"_prediction.csv";
 
-var csv2Path = "../../tensorflow/SolarQuant/src/prediction/"+localStorage.getItem("reqId")+"_real.csv";
+var csv2Path = "../../prediction_output/predictions/"+localStorage.getItem("reqId")+"_real.csv";
 d3.csv(csvPath, type, function(error, data) {
 d3.csv(csv2Path, type, function(error2, data2) {
   x.domain(d3.extent(data, function(d) { return d.created; }));

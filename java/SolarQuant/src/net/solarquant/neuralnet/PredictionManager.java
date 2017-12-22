@@ -16,7 +16,7 @@ import net.solarquant.util.StatusEnum;
 public abstract class PredictionManager implements NetManager{
 	protected static final String PREDICTION_TABLE = "prediction_requests";
 	private String engineName_;
-	protected Logger logger = Logger.getLogger(TrainingManager.class);
+	protected Logger logger = Logger.getLogger(PredictionManager.class);
 	protected String location;
 	protected DBHandler db = new DBHandler();
 

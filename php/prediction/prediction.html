@@ -111,7 +111,7 @@ var context = svg.append("g")
 
 
 
-d3.csv("../../tensorflow/SolarQuant/src/correlation/28_correlation.csv", type, function(error, data) {
+d3.csv("../../prediction_output/28_correlation.csv", type, function(error, data) {
   if (error) throw error;
   d3.csv("real.csv", type, function(error2, data2) {
 

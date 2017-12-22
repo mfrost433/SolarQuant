@@ -1,117 +1,109 @@
-from urllib2 import Request, urlopen, URLError
+from urllib2 import Request, urlopen
 import json
-
 import datetime
 import os
+
 directory = os.path.dirname(__file__)
-print(directory)
-class DataRetriever():
 
-#
-#WEATHER DATUM DOES NOT GO BACK FAR ENOUGH - 2015 IS EARLIEST
-#
-#
-#
-#
 
+# Class deals with API calls
+class DataRetriever:
+    defaultStartDate = datetime.datetime.strptime("2015-01-01 00:00", "%Y-%m-%d %M:%S")
+    formatTime = datetime.datetime.strptime
 
     PREFIX = "https://data.solarnetwork.net"
-    def __init__(self, nodeId, srcId, startDate, endDate):
 
-        self.nodeId = nodeId
-        self.srcId = srcId
+    def __init__(self, node_id, src_id, start_date, end_date):
+
+        self.nodeId = node_id
+        self.srcId = src_id
         self.chunksFolder = os.path.join(directory, "chunks/")
         self.weatherFolder = os.path.join(directory, "weather/")
-        startDateI, endDateI = self.getInterval()
+        start_date_i, end_date_i = self.get_interval()
 
-        #if the difference between the last datum and the current date is too large, fail.
-        if(abs((datetime.datetime.strptime(endDateI, "%Y-%m-%d %M:%S") - datetime.datetime.utcnow()).days) > 15):
-            print(datetime.datetime.strptime(endDateI, "%Y-%m-%d %M:%S") - datetime.datetime.utcnow().days)
-            print(startDateI)
-            print(datetime.datetime.utcnow())
-
-
+        # if the difference between the last datum and the current date is too large, fail.
+        if abs((datetime.datetime.strptime(end_date_i, "%Y-%m-%d %M:%S") - datetime.datetime.utcnow()).days) > 15:
             raise Exception
 
+        # if no start date is defined,
+        if (start_date is None) | (end_date is None):
 
-        if((startDate == None) | (endDate == None)):
-
-            if(datetime.datetime.strptime(startDateI, "%Y-%m-%d %M:%S") < datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")):
-                self.startDate = datetime.datetime.strptime("2015-01-01 00:00","%Y-%m-%d %M:%S")
+            if (self.formatTime(start_date_i, "%Y-%m-%d %M:%S") < self.defaultStartDate):
+                self.startDate = self.defaultStartDate
             else:
-                self.startDate = datetime.datetime.strptime(startDateI, "%Y-%m-%d %M:%S")
-            self.endDate = datetime.datetime.strptime(endDateI, "%Y-%m-%d %M:%S")
+                self.startDate = self.formatTime(start_date_i, "%Y-%m-%d %M:%S")
+            self.endDate = self.formatTime(end_date_i, "%Y-%m-%d %M:%S")
 
         else:
-            self.startDate = datetime.datetime.strptime(startDate,"%Y-%m-%d:%H:%M")
-            self.endDate = datetime.datetime.strptime(endDate,"%Y-%m-%d:%H:%M")
+            self.startDate = self.formatTime(start_date, "%Y-%m-%d:%H:%M")
+            self.endDate = self.formatTime(end_date, "%Y-%m-%d:%H:%M")
 
-    def getChunkEndDate(self, current, endDate, minInterval):
-        out = current + datetime.timedelta(minutes=500*minInterval)
-        if(out > endDate):
-            return endDate
+    @staticmethod
+    def get_chunk_end_date(current, end_date, min_interval):
+
+        out = current + datetime.timedelta(minutes=500 * min_interval)
+        if out > end_date:
+            return end_date
         else:
             return out
 
-    def getNodeData(self):
+    # downloads all node datum within a range as JSON files
+    def get_node_data(self):
 
-        chunkStart = self.startDate
-        while (chunkStart < self.endDate):
-            chunkEnd = self.getChunkEndDate(chunkStart,self.endDate, 20)
+        chunk_start = self.startDate
+        while chunk_start < self.endDate:
 
-            startString = datetime.datetime.strftime(chunkStart,"%Y-%m-%dT12%%3A00")
-
-            endString = datetime.datetime.strftime(chunkEnd, "%Y-%m-%dT12%%3A00")
+            chunk_end = self.get_chunk_end_date(chunk_start, self.endDate, 20)
+            start_string = datetime.datetime.strftime(chunk_start, "%Y-%m-%dT12%%3A00")
+            end_string = datetime.datetime.strftime(chunk_end, "%Y-%m-%dT12%%3A00")
 
             request = Request(self.PREFIX + "/solarquery/api/v1/pub/datum/"
-                              "list?nodeId="+self.nodeId+"&aggregation=ThirtyMinute&startDate="+
-                              startString+"&endDate="+endString+"&sourceIds="+self.srcId+"&max=5000000")
-            data = ""
-            try:
+                                            "list?nodeId=" + self.nodeId + "&aggregation=ThirtyMinute&startDate=" +
+                              start_string + "&endDate=" + end_string + "&sourceIds=" + self.srcId + "&max=5000000")
 
-                response = urlopen(request)
-                data = json.loads(response.read())
-                with open(self.chunksFolder+'chunk_'+ startString+'.json', 'w') as outfile:
-
-                    outfile.write(json.dumps(data, indent=4))
-            except:
-                print("Failed")
-            chunkStart = chunkEnd
-
-
-
-    def getWeatherData(self):
-
-        chunkStart = self.startDate
-        while (chunkStart < self.endDate):
-            chunkEnd = self.getChunkEndDate(chunkStart, self.endDate, 30)
-
-            startString = datetime.datetime.strftime(chunkStart,"%Y-%m-%d")
-
-            endString = datetime.datetime.strftime(chunkEnd, "%Y-%m-%d")
-
-
-            request = Request(self.PREFIX+"/solarquery/api/v1/pub/location/datum/list?locationId=301025&sourceIds="
-                              "NZ%20MetService&offset=0&"
-                              "startDate=" + startString + "&endDate=" + endString)
-            data = ""
             try:
                 response = urlopen(request)
                 data = json.loads(response.read())
-                with open(self.weatherFolder+'/weather_'+ startString+'.json', 'w') as outfile:
+
+                # writes each request into json file with start date as string
+                with open(self.chunksFolder + 'chunk_' + start_string + '.json', 'w') as outfile:
+
+                    outfile.write(json.dumps(data, indent=4))
+
+            except:
+                print("Failed")
+            chunk_start = chunk_end
+
+    # downloads all weather datum within a range as JSON files
+    def get_weather_data(self):
+
+        chunk_start = self.startDate
+
+        while chunk_start < self.endDate:
+            # moves sliding window of time over chunks
+            chunk_end = self.get_chunk_end_date(chunk_start, self.endDate, 30)
+            start_string = datetime.datetime.strftime(chunk_start, "%Y-%m-%d")
+            end_string = datetime.datetime.strftime(chunk_end, "%Y-%m-%d")
+
+            request = Request(self.PREFIX + "/solarquery/api/v1/pub/location/datum/list?locationId=301025&sourceIds="
+                                            "NZ%20MetService&offset=0&"
+                                            "startDate=" + start_string + "&endDate=" + end_string)
+            try:
+                response = urlopen(request)
+                data = json.loads(response.read())
+                with open(self.weatherFolder + '/weather_' + start_string + '.json', 'w') as outfile:
                     outfile.write(json.dumps(data, indent=4))
             except:
                 print("Failed")
-            chunkStart = chunkEnd
+            chunk_start = chunk_end
 
-
-    def getInterval(self):
-        request = Request(self.PREFIX + "/solarquery/api/v1/pub/range/interval?nodeId="+self.nodeId)
+    # gets the range of datum for the node, from start date to end date.
+    def get_interval(self):
+        request = Request(self.PREFIX + "/solarquery/api/v1/pub/range/interval?nodeId={}".format(self.nodeId))
         data = ""
         try:
             response = urlopen(request)
             data = json.loads(response.read())
-
 
         except:
             print("Failed")

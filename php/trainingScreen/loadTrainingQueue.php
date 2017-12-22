@@ -93,7 +93,7 @@ function getCorrelationButton($num, $reqId)
 {
     $status = "";
     if ($num == 4) {
-        $status = " <button type='button' class='btn btn-warning btn-xs'
+        $status = " <button type='button' class='btn btn-success btn-xs'
        onclick='viewCorrelation(" . $reqId . ")'>Correlation</button>";
     } else {
         $status = " <button type='button' class='btn btn-warning btn-xs'>Correlation</button>";

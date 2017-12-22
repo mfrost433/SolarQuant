@@ -7,5 +7,5 @@ PYTHONPATH=/home/matthew/.local/lib/python2.7/site-packages/
 
 
 #refresh predictions
-*/30 * * * * python /var/www/html/solarquant/tensorflow/SolarQuant/src/prediction/UpdatePredictions.py >> /var/www/html/solarquant/logs/cronlog.txt 2>&1
+*/30 * * * * python /var/www/html/solarquant/prediction_output/predictions/UpdatePredictions.py >> /var/www/html/solarquant/logs/cronlog.txt 2>&1
 
