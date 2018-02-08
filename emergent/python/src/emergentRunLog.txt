@@ -29,24 +29,29 @@ output weights_file:
 Set tag in program: BpStartup to: test1
 Set log_dir in program: BpStartup to: log
 Set log_file_nm in program: BpStartup to: /var/www/html/solarquant/emergent/log/logFile1.txt
-Set max_epoch in program: BpTrain to: 50
-Set output_file in program: BpStartup to: /var/www/html/solarquant/emergent/output/outputFile.csv
+Set max_batch in program: BpBatch to: 1
+Set output_file in program: BpStartup to: /var/www/html/solarquant/emergent/python/test_out/out_138.csv
 Set input_file in program: BpStartup to: /var/www/html/solarquant/emergent/python/src/training/inputs/input_138
-Set output_weights_file in program: BpStartup to: /var/www/html/solarquant/emergent/weights/weights_149_Solar
-Set mode in program: BpStartup to: train
+Set input_weights_file in program: BpStartup to: /var/www/html/solarquant/emergent/weights/weights_149_Solar.wts
+Set mode in program: BpStartup to: question
 log_file_nm sent: /var/www/html/solarquant/emergent/log/logFile1.txt
-mode sent: train
+mode sent: question
 log_file_nm just set: /var/www/html/solarquant/emergent/log/logFile1.txt
-in mode train: train
-output_file sent: /var/www/html/solarquant/emergent/output/outputFile.csv
-input_file sent: /var/www/html/solarquant/emergent/python/src/training/inputs/input_138
-weights_file sent: 
-Saving epoch log data to:  log_file_nm = /var/www/html/solarquant/emergent/log/logFile1.txt
-Running: BpBatch
+before loadiing weights_file:/var/www/html/solarquant/emergent/weights/weights_149_Solar.wts
+.programs["BpStartup"]: 	method() MethodCall :	00224     network->LoadWeights(input_weights_file);
+	
+after loadiing weights_file:/var/www/html/solarquant/emergent/weights/weights_149_Solar.wts
 .programs["BpStartup"]: 	call
-program() ProgramCall :	00316   { // call program: BpBatch
+program() ProgramCall :	00239     { // call program: BpEpochTest
 	call
-program()   
-Network_0 Weights Initialized
-Network_0 Weights Initialized
-Network_0 Weights Initialized
+program()     
+.programs.gp["BpAll_Std"]["ExportData"]: 	var=arg ProgVarFmArg :	00027   { // prog var fm arg: ExportData
+	
+Set output_file in program: ExportData to: /var/www/html/solarquant/emergent/python/test_out/out_138.csv
+from ExportData output_file: /var/www/html/solarquant/emergent/python/test_out/out_138.csv
+.programs.gp["BpAll_Std"]["ExportData"]: 	method() MethodCall :	00037   FinalData->ExportData(output_file, FinalData);
+	
+Conversion: (Int) not defined for type: DataTable
+ExportData ExportData line: 000037
+  FinalData->ExportData(output_file, FinalData);
+Quitting non-interactive job on error

@@ -182,12 +182,14 @@ def add_prediction_input(node_id, src_id):
     cursor.execute(deletequery, (node_id, src_id))
     cnx.commit()
 
+    # returns the weather at a datetime that is specified in the input
     def get_weather_for_date(date):
         query_weather = "SELECT * FROM yr_weather WHERE PREDICTION_DATE = '{}'".format(date)
         cursor.execute(query_weather)
         data_w = cursor.fetchall()
         return data_w
 
+    # gets the datum for the a single week, the number of weeks previous determined by num_prev
     def get_prev_datum_for_date(date,num_prev):
         date = date - datetime.timedelta(weeks=num_prev)
         query_prev = "SELECT WATT_HOURS FROM node_datum WHERE NODE_ID = {} AND SOURCE_ID = '{}' " \
@@ -196,6 +198,8 @@ def add_prediction_input(node_id, src_id):
         data_prev = cursor.fetchall()
         return data_prev
 
+
+    # inserts the prediction data into the formatted prediction input table.
     prediction_input = []
     for i in range(len(data) - 2):
         if (data[i][0] > start_date):

@@ -1,5 +1,0 @@
-mysql -u solarquant -p solarquant < /var/www/html/solarquant/database/solarquant_20171116a.sql
-
-sudo mysqldump -p solarquant > /var/www/html/solarquant/database/solarquant_20171116a.sql
-
-sudo mysqldump -p solarquant > /var/www/html/solarquant/database/solarquant0.sql

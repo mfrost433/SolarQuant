@@ -1,3 +1,7 @@
+"""This is the entry point for a module that takes a request ID and a date range, and fills the database with data
+within the date range for the node described by the request ID table.
+"""
+
 import mysql.connector
 import os
 import argparse
@@ -17,6 +21,8 @@ argParser.add_argument("-e", "--enddate", dest="endDate", help="end date",
 
 args = argParser.parse_args()
 
+
+# clears all json files in the chunks folder
 chunksFolder = os.path.join(directory, "chunks/")
 weatherFolder = os.path.join(directory, "weather/")
 for the_file in os.listdir(chunksFolder):
@@ -26,6 +32,7 @@ for the_file in os.listdir(chunksFolder):
             os.unlink(file_path)
     except Exception as e:
         print(e)
+
 
 cnx = mysql.connector.connect(user='solarquant', password='solarquant',
                               host='localhost',
@@ -41,19 +48,24 @@ def log_error(messg):
     with open(filename, "a") as myfile:
         myfile.write("\nERROR:" + messg)
 
-
+# grabs metadata about request
 cursor.execute(infoQuery)
 data = cursor.fetchall()
 for row in data:
     nodeId = str(row[0])
     srcId = str(row[1])
 
+# downloads latest weather data (if applicable)
 pr.update_weather()
-if ((args.startDate == None) & (args.endDate == None)):
-    pr.update_datum(nodeId, srcId)
 
+# if start data / end date are not set, use a default.
+if ((args.startDate == None) & (args.endDate == None)):
+    # stores the raw node datum
+    pr.update_datum(nodeId, srcId)
+    # creates a prediction input for the request ID
     pr.add_prediction_input(nodeId, srcId)
 else:
+
     start = dt.datetime.strptime(args.startDate, "%Y-%m-%d:%H")
     end = dt.datetime.strptime(args.endDate, "%Y-%m-%d:%H")
 

@@ -1,474 +1,71 @@
-2017-12-13 11:41:34
-231
-INSERT INTO registered_nodes VALUES(231, SF, 'DSF','DF','SDF', '', '')bad2017-12-13 11:42:09
-205
-INSERT INTO registered_nodes VALUES(205, 1, 'sdasdSD','asdsd','ASD', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-13 11:42:24
-149
-INSERT INTO registered_nodes VALUES(149, 1, 'sdasdSD','SAD','ASDSAD', '', '')good00077.1HotWaterHousePhaseAPhaseBPhaseCSolarTemperature2017-12-13 11:42:45
-
-205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-13 11:42:45',1, 'Tensorflow')good2017-12-13 12:09:19
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-13 12:09:19',1, 'Tensorflow')good2017-12-13 12:39:00
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-13 12:39:00',1, 'Tensorflow')good2017-12-13 12:54:38
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-13 12:54:38',1, 'Tensorflow')good2017-12-13 13:48:54
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-13 13:48:54',1, 'Tensorflow')good2017-12-13 13:50:07
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-13 13:50:07',1, 'Tensorflow')good2017-12-13 13:58:10
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-13 13:58:10',1, 'Tensorflow')good2017-12-13 14:16:31
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-13 14:16:31',1, 'Tensorflow')good2017-12-13 14:26:51
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-13 14:26:51',1, 'Tensorflow')good2017-12-13 14:42:29
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-13 14:42:29',1, 'Tensorflow')good2017-12-13 14:44:00
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-13 14:44:00',1, 'Tensorflow')good2017-12-13 14:50:12
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-13 14:50:12',1, 'Tensorflow')good2017-12-13 14:59:44
-
-149
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'House','2017-12-13 14:59:44',1, 'Tensorflow')good2017-12-13 15:18:30
-
-149
-House
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'House','2017-12-13 15:18:30',1, 'Tensorflow')good2017-12-13 15:35:21
-
-205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-13 15:35:21',1, 'Tensorflow')good2017-12-13 16:27:03
-
-205
-House
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'House','2017-12-13 16:27:03',1, 'Tensorflow')good2017-12-13 16:33:34
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-13 16:33:34',1, 'Tensorflow')good2017-12-13 19:31:30
-
-205
-House
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'House','2017-12-13 19:31:30',1, 'Tensorflow')good2017-12-14 10:05:38
-
-205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-14 10:05:38',1, 'Tensorflow')good2017-12-14 11:52:19
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-14 11:52:19',1, 'Tensorflow')good2017-12-14 11:52:25
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-14 11:52:25',1, 'Tensorflow')good2017-12-14 11:52:54
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-14 11:52:54',1, 'Tensorflow')good2017-12-14 11:52:58
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-14 11:52:58',1, 'Tensorflow')good2017-12-14 12:05:29
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-14 12:05:29',1, 'Tensorflow')good2017-12-14 13:03:50
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-14 13:03:50',1, 'Tensorflow')good2017-12-14 13:38:20
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-14 13:38:20',1, 'Tensorflow')good2017-12-14 13:55:26
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-14 13:55:26',1, 'Tensorflow')good2017-12-14 14:06:49
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-14 14:06:49',1, 'Tensorflow')good2017-12-14 14:14:37
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-14 14:14:37',1, 'Tensorflow')good2017-12-14 15:13:19
-275
-INSERT INTO registered_nodes VALUES(275, 1, 'dsf','fg','f', '', '')goodChillerDownstairsLightingDownstairsMainSupplyM1P1M1P2M1P3MainMain2Main3Main4Main5Main6Main7Main8UpstairsLighting1UpstairsLighting2UpstairsMainSupply2017-12-14 15:13:55
-
-275
-UpstairsMainSupply
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-14 15:13:55',1, 'Tensorflow')good2017-12-14 15:20:10
-
-275
-UpstairsMainSupply
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-14 15:20:10',1, 'Tensorflow')good2017-12-14 15:59:10
-205
-INSERT INTO registered_nodes VALUES(205, 1, 'Ak','a','d', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-14 16:00:15
-205
-INSERT INTO registered_nodes VALUES(205, 1, 'asd','d','d', '', '')goodHotWaterHouseLightingMainPhaseAPhaseBPhaseCSolarTempHouse2017-12-14 16:00:28
-126
-INSERT INTO registered_nodes VALUES(126, 1, 'sdasd','asd','d', '', '')good/power/pcm/1/power/pcm/1?percentHangerHanger/PhaseAHanger/PhaseBHanger/PhaseCInverter1Inverter2Inverter3Inverter4Inverter52017-12-14 16:00:38
 
 126
-Hanger
+Hanger/PhaseA
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-14 16:00:38',1, 'Tensorflow')good2017-12-14 16:18:02
-
-126
-Hanger
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 126, 'Hanger','2017-12-14 16:18:02',1, 'Tensorflow')good2017-12-15 09:33:15
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 09:33:15',1, 'Tensorflow')good2017-12-15 10:10:24
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 10:10:24',1, 'Tensorflow')good2017-12-15 10:11:34
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 10:11:34',1, 'Tensorflow')good2017-12-15 10:18:13
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-15 10:18:13',1, 'Tensorflow')good2017-12-15 12:51:31
-147
-INSERT INTO registered_nodes VALUES(147, 1, 'sdasdasd','sad','sad', '', '')good00077.100077.200077.300077.TPhaseAPhaseBPhaseC2017-12-15 12:51:43
-233
-INSERT INTO registered_nodes VALUES(233, 1, 'sdasdSD','D','d', '', '')goodABCMainSolar_SMA2017-12-15 12:52:03
-
-233
-Solar_SMA
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 233, 'Solar_SMA','2017-12-15 12:52:03',1, 'Tensorflow')good2017-12-15 13:24:03
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger/PhaseA','2018-02-08 13:38:02',1, 'Tensorflow')bad08
+2018-02-08 13:38:53
 
 147
-00077.1
+PhaseC
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 147, '00077.1','2017-12-15 13:24:03',1, 'Tensorflow')good2017-12-15 13:24:17
-
-205
-HotWater
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'HotWater','2017-12-15 13:24:17',1, 'Tensorflow')good2017-12-15 13:47:48
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-15 13:47:48',1, 'Tensorflow')good2017-12-15 14:05:15
+INSERT INTO training_requests VALUES(Null, 147, 'PhaseC','2018-02-08 13:38:53',1, 'Tensorflow')bad0808082018-02-08 13:39:20
 
 149
-Solar
+PhaseB
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 14:05:15',1, 'Tensorflow')good2017-12-15 14:17:16
+INSERT INTO training_requests VALUES(Null, 149, 'PhaseB','2018-02-08 13:39:20',1, 'Tensorflow')bad080220182018-02-08 13:40:11
 
-149
-Solar
+147
+PhaseA
 Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-15 14:17:16',1, 'Tensorflow')good2017-12-15 14:37:10
-
-275
-UpstairsMainSupply
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-15 14:37:10',1, 'Tensorflow')good2017-12-15 14:43:43
-
-275
-UpstairsMainSupply
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-15 14:43:43',1, 'Tensorflow')good2017-12-15 15:25:05
-
-205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-15 15:25:05',1, 'Tensorflow')good2017-12-15 15:44:25
-
-275
-UpstairsMainSupply
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-15 15:44:25',1, 'Tensorflow')good2017-12-15 15:44:32
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-15 15:44:32',1, 'Tensorflow')good2017-12-15 15:44:38
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-15 15:44:38',1, 'Tensorflow')good2017-12-18 13:33:07
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-18 13:33:07',1, 'Tensorflow')good2017-12-18 13:54:19
-
-275
-UpstairsMainSupply
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 275, 'UpstairsMainSupply','2017-12-18 13:54:19',1, 'Tensorflow')good2017-12-18 14:06:56
+INSERT INTO training_requests VALUES(Null, 147, 'PhaseA','2018-02-08 13:40:11',1, 'Tensorflow', '01-01-1970', '01-01-1970')bad01-01-197001-01-197020182018-02-08 13:44:51
 
 126
 Hanger
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-18 14:06:56',1, 'Tensorflow')good2017-12-18 16:42:06
-
-149
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'House','2017-12-18 16:42:06',1, 'Tensorflow')good2017-12-18 16:44:04
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-18 16:44:04',1, 'Tensorflow')good2017-12-18 16:46:46
-
-205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-18 16:46:46',1, 'Tensorflow')good2017-12-19 10:17:45
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-19 10:17:45',1, 'Tensorflow')good2017-12-19 11:40:25
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-19 11:40:25',1, 'Tensorflow')good2017-12-20 10:04:44
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-20 10:04:44',1, 'Tensorflow')good2017-12-20 16:39:32
-
-149
-Solar
-Emergent
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-20 16:39:32',1, 'Emergent')good2017-12-21 11:52:57
-
-275
-Chiller
-Emergent
-INSERT INTO training_requests VALUES(Null, 275, 'Chiller','2017-12-21 11:52:57',1, 'Emergent')good2017-12-21 12:17:51
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-21 12:17:51',1, 'Tensorflow')good2017-12-21 12:17:59
-
-149
-Solar
-Emergent
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-21 12:17:59',1, 'Emergent')good2017-12-21 13:34:56
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-21 13:34:56',1, 'Tensorflow')good2017-12-21 13:45:18
-
-275
-Chiller
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 275, 'Chiller','2017-12-21 13:45:18',1, 'Tensorflow')good2017-12-21 14:00:00
-
-126
-Hanger
-Emergent
-INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-21 14:00:00',1, 'Emergent')good2017-12-21 14:42:11
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2018-02-08 13:44:51',1, 'Tensorflow', '08-02-2018', '08-02-2018')bad08-02-201808-02-201820182018-02-08 13:47:07
 
 126
 Hanger
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2017-12-21 14:42:11',1, 'Tensorflow')good2017-12-21 14:54:28
-
-149
-Solar
-Emergent
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-21 14:54:28',1, 'Emergent')good2017-12-21 15:36:06
+INSERT INTO training_requests VALUES(Null, 126, 'Hanger','2018-02-08 13:47:07',1, 'Tensorflow', '2018-02-08 00:00:00', '2018-02-08 00:00:00')good2018-02-08 14:11:12
 
 205
 Solar
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-21 15:36:06',1, 'Tensorflow')good2017-12-21 16:12:42
+INSERT INTO training_requests VALUES(Null, 205, 'Solar','2018-02-08 14:11:12',1, 'Tensorflow', '2017-04-02 00:00:00', '2018-02-08 00:00:00')good2018-02-08 14:20:44
 
-149
-Solar
-Emergent
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-21 16:12:42',1, 'Emergent')good2017-12-21 16:29:40
-
-149
-Solar
+147
+00077.T
 Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-21 16:29:40',1, 'Tensorflow')good2017-12-21 16:40:23
+INSERT INTO training_requests VALUES(Null,'', 147, '00077.T','2018-02-08 14:20:44',1, 'Tensorflow', '2018-02-08 00:00:00', '2018-02-08 00:00:00')good2018-02-08 14:20:54
 
-149
-Solar
+126
+Hanger/PhaseB
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-21 16:40:23',1, 'Tensorflow')good2017-12-21 17:09:21
+INSERT INTO training_requests VALUES(Null,'MEME', 126, 'Hanger/PhaseB','2018-02-08 14:20:54',1, 'Tensorflow', '2018-02-08 00:00:00', '2018-02-08 00:00:00')good2018-02-08 15:27:17
 
 205
 Solar
 Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-21 17:09:21',1, 'Tensorflow')good2017-12-21 17:14:27
+INSERT INTO training_requests VALUES(Null,'', 205, 'Solar','2018-02-08 15:27:17',1, 'Tensorflow', '2018-02-08 00:00:00', '2018-02-08 00:00:00')good2018-02-08 15:28:53
 
 205
 Solar
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-21 17:14:27',1, 'Tensorflow')good2017-12-21 17:17:26
+INSERT INTO training_requests VALUES(Null,'', 205, 'Solar','2018-02-08 15:28:53',1, 'Tensorflow', '2017-02-01 00:00:00', '2018-02-08 00:00:00')good2018-02-08 15:35:09
 
-205
-Solar
+126
+Hanger
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-21 17:17:26',1, 'Tensorflow')good2017-12-21 17:25:29
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-21 17:25:29',1, 'Tensorflow')good2017-12-22 12:38:28
-
-205
-House
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'House','2017-12-22 12:38:28',1, 'Tensorflow')good2017-12-22 12:43:21
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-22 12:43:21',1, 'Tensorflow')good2017-12-22 12:48:54
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-22 12:48:54',1, 'Tensorflow')good2017-12-22 15:28:22
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-22 15:28:22',1, 'Tensorflow')good2017-12-22 15:28:26
-
-205
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'Solar','2017-12-22 15:28:26',1, 'Tensorflow')good2017-12-22 15:35:35
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-22 15:35:35',1, 'Tensorflow')good2017-12-22 15:52:27
+INSERT INTO training_requests VALUES(Null,'', 126, 'Hanger','2018-02-08 15:35:09',1, 'Tensorflow', '2017-02-08 00:00:00', '2018-02-08 00:00:00')good2018-02-08 15:38:57
 
 275
 Chiller
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 275, 'Chiller','2017-12-22 15:52:27',1, 'Tensorflow')good2017-12-22 16:01:19
-
-126
-Inverter1
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 126, 'Inverter1','2017-12-22 16:01:19',1, 'Tensorflow')good2017-12-22 16:08:46
-
-126
-Inverter1
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 126, 'Inverter1','2017-12-22 16:08:46',1, 'Tensorflow')good2017-12-22 16:11:02
-
-205
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 205, 'Solar','2017-12-22 16:11:02',1, 'Tensorflow')good2017-12-22 16:23:34
-
-205
-House
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 205, 'House','2017-12-22 16:23:34',1, 'Tensorflow')good2017-12-22 16:26:10
-
-275
-Chiller
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 275, 'Chiller','2017-12-22 16:26:10',1, 'Tensorflow')good2017-12-22 16:29:48
+INSERT INTO training_requests VALUES(Null,'', 275, 'Chiller','2018-02-08 15:38:57',1, 'Tensorflow', '2017-02-08 00:00:00', '2018-02-08 00:00:00')good2018-02-08 16:46:28
 
 149
 Solar
 Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-22 16:29:48',1, 'Tensorflow')good2017-12-22 16:36:54
-
-149
-Solar
-Tensorflow
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-22 16:36:54',1, 'Tensorflow')good2017-12-22 16:40:32
-
-149
-Solar
-Tensorflow
-INSERT INTO prediction_requests VALUES(Null, 149, 'Solar','2017-12-22 16:40:32',1, 'Tensorflow')good2017-12-22 16:44:59
-
-149
-Solar
-Emergent
-INSERT INTO training_requests VALUES(Null, 149, 'Solar','2017-12-22 16:44:59',1, 'Emergent')good
+INSERT INTO training_requests VALUES(Null,'', 149, 'Solar','2018-02-08 16:46:28',1, 'Tensorflow', '2018-02-08 00:00:00', '2018-02-08 00:00:00')good

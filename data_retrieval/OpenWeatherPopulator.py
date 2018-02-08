@@ -1,4 +1,5 @@
-
+"""Imports historic data from OpenWeatherMap for training
+"""
 import os
 import datetime as dt
 import mysql.connector
@@ -39,6 +40,7 @@ def updateWeather():
             wind = i["wind"]
             date = dt.datetime.strptime(i["dt_iso"],"%Y-%m-%d %H:%M:%S +0000 UTC")
 
+            # grabs all useful data from JSON
             temp.append(date)
             temp.append(main["temp"])
             temp.append(wind["deg"])

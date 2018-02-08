@@ -1,3 +1,8 @@
+""" Handles the insertion of datum into the database for training data. Downloads the relevant historical weather
+and node datum to train on, fills the raw datum stores, and then fills the formatted training input table
+using this data.
+"""
+
 import mysql.connector
 import os
 import json
@@ -25,7 +30,6 @@ cnx = mysql.connector.connect(user='solarquant', password='solarquant',
                               database='solarquant')
 cursor = cnx.cursor()
 
-
 #
 #
 #
@@ -34,6 +38,7 @@ cursor = cnx.cursor()
 #
 #
 
+# if there is an error with inputting data into database, transition request to error state
 def error_state():
     query = ("UPDATE training_requests SET STATUS = 5 "
              "WHERE REQUEST_ID = " + args.reqId)
@@ -49,9 +54,12 @@ def log_error(messg):
     with open(filename, "a") as myfile:
         myfile.write("\nERROR:" + messg)
 
-
+# weather words are seperated into equivalence classes,
+# semi-ordinal weather values are converted into a continuous value between 0 and 1
 def get_weather_value(word):
-    weather_words = ["Fine", "Drizzle", "Partly cloudy", "Cloudy", "Windy", "Fog", "Few showers", "Showers", "Rain",
+    weather_words = ["Fine", "Drizzle", "Partly cloudy",
+                     "Cloudy", "Windy", "Fog",
+                     "Few showers", "Showers", "Rain",
                      "Hail", "Thunder"]
     for i in range(len(weather_words)):
         if weather_words[i] == word:
@@ -61,6 +69,8 @@ def get_weather_value(word):
 def populate():
     chunks_folder = os.path.join(directory, "chunks/")
     weather_folder = os.path.join(directory, "weather/")
+
+    # clear weather + datum chunk folders of old data
     for the_file in os.listdir(chunks_folder):
         file_path = os.path.join(chunks_folder, the_file)
         try:
@@ -81,7 +91,7 @@ def populate():
     start_date = args.startDate
     end_date = args.endDate
 
-    info_query = "SELECT NODE_ID, SOURCE_ID FROM training_requests WHERE REQUEST_ID = " + args.reqId
+    info_query = "SELECT NODE_ID, SOURCE_ID, START_DATE FROM training_requests WHERE REQUEST_ID = " + args.reqId
 
     cursor.execute(info_query)
     data = cursor.fetchall()
@@ -91,9 +101,10 @@ def populate():
     for row in data:
         node_id = str(row[0])
         src_id = str(row[1])
+        training_start_date = row[2]
     start_date_dt = datetime.datetime.fromtimestamp(1)
 
-    # tells the dataretriever class to download API data
+    # tells the dataretriever class to download API data into chunks folders
     try:
         dr = DataRetriever(node_id, src_id, start_date, end_date)
         start_date_dt = dr.startDate
@@ -105,6 +116,8 @@ def populate():
         error_state()
 
     result_set = []
+
+    # reads all json chunks into memory
 
     for fname in sorted(os.listdir(chunks_folder)):
         data_file = open(chunks_folder + fname, 'r').read()
@@ -118,6 +131,7 @@ def populate():
     query2 = "INSERT INTO weather_data VALUES (%s, %s, %s, %s, %s)"
     dat = []
 
+    # inserts weather datum into weather table
     for i in result_weather_set:
         try:
             for j in i['data']['results']:
@@ -128,7 +142,6 @@ def populate():
                     dat = dat + data_temp
         except Exception as E:
             pass
-
             log_error(str(E))
 
     try:
@@ -140,12 +153,14 @@ def populate():
 
     query2 = "INSERT INTO node_datum VALUES (%s, %s, %s, %s)"
 
+    # updates node datum in the raw node data table
     prev_date = datetime.datetime.strptime("1000", "%Y")
     dat = []
     for i in result_set:
         try:
             for j in i['data']['results']:
                 c_date = datetime.datetime.strptime(j['created'], "%Y-%m-%d %H:%M:%S.%fZ")
+                # checks if date is within correct range and is after previous
                 if (c_date > start_date_dt) & (prev_date < c_date):
                     data_temp = [(node_id, src_id, c_date, j['wattHours'])]
 
@@ -161,6 +176,7 @@ def populate():
 
     cnx.commit()
     data = []
+    # selecting target wattages
     for j in range(2):
         for i in range(7):
             i = i + 1
@@ -187,9 +203,12 @@ def populate():
         data_w = cursor.fetchall()
         return data_w
 
-    training_start = datetime.datetime.utcnow() - datetime.timedelta(weeks=52)
+    #
+    # IMPORTANT! : Inserts the formatted training datum into the training data table.
+    # Only will input into training table if there is weather data at the same time
+    #
     for i in range(len(data) - 2):
-        if data[i][0] > training_start and data[i + 1][0] == data[i][0] - datetime.timedelta(days=7):
+        if data[i][0] > training_start_date and data[i + 1][0] == data[i][0] - datetime.timedelta(days=7):
             if data[i + 2][0] == data[i][0] - datetime.timedelta(days=14):
 
                 weather_data = get_weather_for_date(data[i][0])
@@ -218,7 +237,10 @@ def populate():
         log_error(str(E))
         tb.print_exc(E)
 
+
     cnx.commit()
+
+    # deletes json files after data is input into database
     for the_file in os.listdir(chunks_folder):
         file_path = os.path.join(chunks_folder, the_file)
         try:

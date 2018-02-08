@@ -177,6 +177,13 @@ $myCalendar->writeScript();
 				</select></td>
 
 			</tr>
+				<tr>
+				<td><span class="solar4">Parameters</span></td>
+				<td><span class = "solar4">Epochs:  </span><input class="solar4" type="text" name="statusId" value="0"
+					size="4">
+					<span class = "solar4">Batch Size:  </span><input class="solar4" type="text" name="statusId" value="0"
+					size="4"></td>
+			</tr>
 			<tr>
 				<td><span class="solar4">Notes:</span></td>
 				<td><textarea cols="70" rows="5" name="notes"></textarea></td>

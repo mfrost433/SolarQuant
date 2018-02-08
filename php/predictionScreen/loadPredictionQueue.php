@@ -114,26 +114,31 @@ function getRefreshButton($status, $reqId){
 function getStatusButtonByNumber($num)
 {
     $status = "";
-    
+    $type = "";
     switch ($num) {
         case 1:
             $status = "Initial";
+	    $type = "btn-warning";
             break;
         case 2:
             $status = "Retrieving Data";
+ 	    $type = "btn-success";
             break;
         case 3:
             $status = "Running";
+ 	    $type = "btn-success";
             break;
         case 4:
             $status = "Finished";
+	    $type = "btn-primary";
             break;
         case 5:
             $status = "Error";
             break;
     }
-    return "<button type='button' class='btn btn-warning btn-xs'>$status</button>";
+    return "<button type='button' class='btn $type btn-xs'>$status</button>";
 }
+
 
 ?>
 </table>

@@ -1,2 +1,0 @@
-#refresh predictions
-* * */1 * * python /var/www/html/solarquant/tensorflow/SolarQuant/src/prediction/UpdatePredictions.py >> /var/www/html/solarquant/logs/cronlog.txt 2>&1

@@ -25,7 +25,7 @@ class DataRetriever:
         if abs((datetime.datetime.strptime(end_date_i, "%Y-%m-%d %M:%S") - datetime.datetime.utcnow()).days) > 15:
             raise Exception
 
-        # if no start date is defined,
+        # if no date range is defined, use default
         if (start_date is None) | (end_date is None):
 
             if (self.formatTime(start_date_i, "%Y-%m-%d %M:%S") < self.defaultStartDate):
