@@ -20,38 +20,40 @@
       <file leaf-file-name="DatabasePopulator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabasePopulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+            <state relative-caret-position="414">
+              <caret line="127" column="27" lean-forward="false" selection-start-line="127" selection-start-column="4" selection-end-line="129" selection-end-column="48" />
               <folding>
                 <element signature="e#242#264#0" expanded="true" />
-                <marker date="1518057845716" expanded="true" signature="1241:1316" ph="UPDATE train... " />
-                <marker date="1518057845716" expanded="true" signature="2832:2912" ph="SELECT NODE_... training_requests" />
-                <marker date="1518057845716" expanded="true" signature="3978:4030" ph="INSERT INTO weather_data... " />
-                <marker date="1518057845716" expanded="true" signature="4662:4708" ph="INSERT INTO node_datum... " />
-                <marker date="1518057845716" expanded="true" signature="5687:5751" ph="SELECT DATE_... node_datum" />
-                <marker date="1518057845716" expanded="true" signature="6414:6505" ph="SELECT DATE_... weather_data" />
-                <marker date="1518057845716" expanded="true" signature="8188:8287" ph="INSERT INTO tensorflow_training_input... " />
+                <marker date="1518396593608" expanded="true" signature="1241:1316" ph="UPDATE train... " />
+                <marker date="1518396593608" expanded="true" signature="3056:3136" ph="SELECT NODE_... training_requests" />
+                <marker date="1518396593608" expanded="true" signature="4261:4313" ph="INSERT INTO weather_data... " />
+                <marker date="1518396593608" expanded="true" signature="4945:4991" ph="INSERT INTO node_datum... " />
+                <marker date="1518396593608" expanded="true" signature="5974:6038" ph="SELECT DATE_... node_datum" />
+                <marker date="1518396593608" expanded="true" signature="6701:6792" ph="SELECT DATE_... weather_data" />
+                <marker date="1518396593608" expanded="true" signature="8474:8573" ph="INSERT INTO tensorflow_training_input... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataRetriever.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataRetriever.py">
+      <file leaf-file-name="PredictionDataRetriever.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PredictionDataRetriever.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="216">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenWeatherPopulator.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OpenWeatherPopulator.py">
+      <file leaf-file-name="PredictionPopulator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PredictionPopulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="511">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+              <folding>
+                <element signature="e#190#212#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,11 +89,14 @@
       <find>PRINT</find>
       <find>rain</find>
       <find>2017-12-16</find>
-      <find>print</find>
       <find>now</find>
       <find>start</find>
       <find>training_</find>
       <find>training_s</find>
+      <find>training_st</find>
+      <find>start_d</find>
+      <find>a</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -100,11 +105,12 @@
         <option value="$PROJECT_DIR$/DatabasePopulatorTest.py" />
         <option value="$PROJECT_DIR$/weather/weather_future.xml" />
         <option value="$PROJECT_DIR$/WeatherHandler.py" />
-        <option value="$PROJECT_DIR$/PredictionPopulator.py" />
         <option value="$PROJECT_DIR$/DataRetriever.py" />
-        <option value="$PROJECT_DIR$/PredictionDataRetriever.py" />
         <option value="$PROJECT_DIR$/OpenWeatherPopulator.py" />
         <option value="$PROJECT_DIR$/DatabasePopulator.py" />
+        <option value="$PROJECT_DIR$/PredictionDataRetriever.py" />
+        <option value="$PROJECT_DIR$/PredictionPopulator.py" />
+        <option value="$PROJECT_DIR$/../prediction_output/predictions/UpdatePredictions.py" />
       </list>
     </option>
   </component>
@@ -115,10 +121,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="292" />
-    <option name="y" value="42" />
-    <option name="width" value="1396" />
-    <option name="height" value="984" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -135,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -147,12 +154,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tensorflow/SolarQuant" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -174,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DatabasePopulatorTest">
+  <component name="RunManager" selected="Python.UpdatePredictions">
     <configuration name="DatabasePopulator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,7 +214,7 @@
       <module name="data_retrieval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DatabasePopulator.py" />
-      <option name="PARAMETERS" value="-r 147 -s 2017-12-22:04:03 -e 2018-2-7:15:03" />
+      <option name="PARAMETERS" value="-r 176 -s 2018-01-09:00:00 -e 2018-02-09:00:00" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -250,20 +256,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="WeatherHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="UpdatePredictions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../prediction_output/predictions" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="data_retrieval" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PredictionDataRetriever.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../prediction_output/predictions/UpdatePredictions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,17 +277,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.DatabasePopulator" />
       <item index="1" class="java.lang.String" itemvalue="Python.DatabasePopulatorTest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.WeatherHandler" />
-      <item index="3" class="java.lang.String" itemvalue="Python.PredictionPopulator" />
-      <item index="4" class="java.lang.String" itemvalue="Python.OpenWeatherPopulator" />
+      <item index="2" class="java.lang.String" itemvalue="Python.PredictionPopulator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.OpenWeatherPopulator" />
+      <item index="4" class="java.lang.String" itemvalue="Python.UpdatePredictions" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.DatabasePopulatorTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DatabasePopulator" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PredictionPopulator" />
-        <item index="3" class="java.lang.String" itemvalue="Python.OpenWeatherPopulator" />
-        <item index="4" class="java.lang.String" itemvalue="Python.WeatherHandler" />
+        <item index="0" class="java.lang.String" itemvalue="Python.UpdatePredictions" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DatabasePopulatorTest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.DatabasePopulator" />
+        <item index="3" class="java.lang.String" itemvalue="Python.PredictionPopulator" />
+        <item index="4" class="java.lang.String" itemvalue="Python.OpenWeatherPopulator" />
       </list>
     </recent_temporary>
   </component>
@@ -304,11 +309,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21078168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37959182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27142859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -335,20 +341,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weather/weather_2015-01-11.json" />
-    <entry file="file://$PROJECT_DIR$/weather/weather_2015-02-22.json" />
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/mysql/connector/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="524" column="0" lean-forward="false" selection-start-line="524" selection-start-column="0" selection-end-line="524" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weather/weather_2017-11-07.json" />
     <entry file="file://$PROJECT_DIR$/weather/weather_2017-10-28.json" />
     <entry file="file://$PROJECT_DIR$/garbage/DatabasePopulatorOld2.py">
@@ -415,60 +412,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chunks/akWeather.json" />
     <entry file="file://$PROJECT_DIR$/chunks/chunk_2015-01-21T12%3A00.json" />
-    <entry file="file://$PROJECT_DIR$/weather/weather_future.xml">
+    <entry file="file://$PROJECT_DIR$/weather/weather_future.xml" />
+    <entry file="file://$PROJECT_DIR$/chunks/chunk_2017-08-09T12%3A00.json" />
+    <entry file="file://$PROJECT_DIR$/chunks/chunk_2017-08-15T12%3A00.json" />
+    <entry file="file://$PROJECT_DIR$/OpenWeatherPopulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PredictionDataRetriever.py">
+    <entry file="file://$PROJECT_DIR$/../prediction_output/predictions/UpdatePredictions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="201" column="76" lean-forward="false" selection-start-line="201" selection-start-column="76" selection-end-line="201" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PredictionPopulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#190#212#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabasePopulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
-          <folding>
-            <element signature="e#242#264#0" expanded="true" />
-            <marker date="1518057845716" expanded="true" signature="1241:1316" ph="UPDATE train... " />
-            <marker date="1518057845716" expanded="true" signature="2832:2912" ph="SELECT NODE_... training_requests" />
-            <marker date="1518057845716" expanded="true" signature="3978:4030" ph="INSERT INTO weather_data... " />
-            <marker date="1518057845716" expanded="true" signature="4662:4708" ph="INSERT INTO node_datum... " />
-            <marker date="1518057845716" expanded="true" signature="5687:5751" ph="SELECT DATE_... node_datum" />
-            <marker date="1518057845716" expanded="true" signature="6414:6505" ph="SELECT DATE_... weather_data" />
-            <marker date="1518057845716" expanded="true" signature="8188:8287" ph="INSERT INTO tensorflow_training_input... " />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataRetriever.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="450">
+          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabasePopulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="127" column="27" lean-forward="false" selection-start-line="127" selection-start-column="4" selection-end-line="129" selection-end-column="48" />
+          <folding>
+            <element signature="e#242#264#0" expanded="true" />
+            <marker date="1518396593608" expanded="true" signature="1241:1316" ph="UPDATE train... " />
+            <marker date="1518396593608" expanded="true" signature="3056:3136" ph="SELECT NODE_... training_requests" />
+            <marker date="1518396593608" expanded="true" signature="4261:4313" ph="INSERT INTO weather_data... " />
+            <marker date="1518396593608" expanded="true" signature="4945:4991" ph="INSERT INTO node_datum... " />
+            <marker date="1518396593608" expanded="true" signature="5974:6038" ph="SELECT DATE_... node_datum" />
+            <marker date="1518396593608" expanded="true" signature="6701:6792" ph="SELECT DATE_... weather_data" />
+            <marker date="1518396593608" expanded="true" signature="8474:8573" ph="INSERT INTO tensorflow_training_input... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PredictionDataRetriever.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWeatherPopulator.py">
+    <entry file="file://$PROJECT_DIR$/PredictionPopulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="511">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding>
+            <element signature="e#190#212#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

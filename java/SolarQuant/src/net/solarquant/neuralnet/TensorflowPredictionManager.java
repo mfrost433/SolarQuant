@@ -21,8 +21,8 @@ public class TensorflowPredictionManager extends PredictionManager{
 
 	@Override
 	protected boolean hasManagedProcessRunComplete(Request r) {
-		String csvLocation = location + "/../../prediction_output/predictions/" + r.getRequestId()+ "_prediction.csv";
-		if ( new File(csvLocation).exists() ) {
+	
+		if ( db.checkPredictionComplete(r) ) {
 			return true;
 		}
 		return false;

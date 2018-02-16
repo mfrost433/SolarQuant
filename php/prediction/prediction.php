@@ -50,7 +50,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height") - margin.top - margin.bottom,
     height2 = +svg.attr("height") - margin2.top - margin2.bottom;
 
-var parseDate = d3.timeParse("%Y-%m-%dT%H:%M:%S.%fZ");
+var parseDate = d3.timeParse("%Y-%m-%d %H:%M:%S");
 
 var x = d3.scaleTime().range([0, width]),
     x2 = d3.scaleTime().range([0, width]),
@@ -73,27 +73,27 @@ var zoom = d3.zoom()
 
 var area = d3.area()
     .curve(d3.curveMonotoneX)
-    .x(function(d) { return x(d.created); })
+    .x(function(d) { return x(d.DATE); })
     .y0(height)
-    .y1(function(d) { return y(d.predictedWattHours); });
+    .y1(function(d) { return y(d.PREDICTED_WATT_HOURS); });
 
 var area2 = d3.area()
     .curve(d3.curveMonotoneX)
-    .x(function(d) { return x2(d.created); })
+    .x(function(d) { return x2(d.DATE); })
     .y0(height2)
-    .y1(function(d) { return y2(d.predictedWattHours); });
+    .y1(function(d) { return y2(d.PREDICTED_WATT_HOURS); });
     
 var areaReal = d3.area()
 .curve(d3.curveMonotoneX)
-.x(function(d) { return x(d.created); })
+.x(function(d) { return x(d.DATE); })
 .y0(height)
-.y1(function(d) { return y(d.wattHours); });
+.y1(function(d) { return y(d.WATT_HOURS); });
 
 var areaReal2 = d3.area()
 .curve(d3.curveMonotoneX)
-.x(function(d) { return x2(d.created); })
+.x(function(d) { return x2(d.DATE); })
 .y0(height2)
-.y1(function(d) { return y2(d.wattHours); });
+.y1(function(d) { return y2(d.WATT_HOURS); });
 
 svg.append("defs").append("clipPath")
     .attr("id", "clip")
@@ -112,11 +112,16 @@ var context = svg.append("g")
 
 
 var csvPath = "../../prediction_output/correlations/"+localStorage.getItem("reqId")+"_correlation.csv";
-d3.csv(csvPath, type, function(error, data) {
 
 
-  x.domain(d3.extent(data, function(d) { return d.created; }));
-  y.domain([0, d3.max(data, function(d) { return d.predictedWattHours*1.5; })]);
+
+d3.json("./graphFromDatabase.php?reqId="+localStorage.getItem("reqId") , function(error, data) {
+	data.forEach(function(d){
+		d.DATE = parseDate(d.DATE);
+	});
+
+  x.domain(d3.extent(data, function(d) { return d.DATE; }));
+  y.domain([0, d3.max(data, function(d) { return d.PREDICTED_WATT_HOURS*1.5; })]);
   x2.domain(x.domain());
   y2.domain(y.domain());
 
@@ -143,6 +148,7 @@ d3.csv(csvPath, type, function(error, data) {
   .datum(data)
   .attr("class", "areaReal")
   .attr("d", areaReal);
+
   context.append("path")
   .datum(data)
   .attr("class", "areaReal")
@@ -191,10 +197,11 @@ function zoomed() {
 }
 
 function type(d) {
-  d.created = parseDate(d.created);
 
-  d.wattHours = +d.wattHours;
-  d.predictedWattHours = +d.predictedWattHours;
+  d.DATE = parseDate(d.DATE);
+
+  d.WATT_HOURS = +d.WATT_HOURS;
+  d.PREDICTED_WATT_HOURS = +d.PREDICTED_WATT_HOURS;
   return d;
 }
 

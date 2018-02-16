@@ -146,13 +146,16 @@ $myCalendar->setDate($now->format('d'), $now->format('m'), $now->format('Y'));
 // output the calendar
 $myCalendar->writeScript();
 
-?>
+?>    Dynamic Refresh <label class="switch">
+  <input type="checkbox" name="endDateToggle">
+  <span class="slider round"></span>
+</label>
 	</td>
 
 			</tr>
 			<tr>
-				<td><span class="solar4">PatternSet Name</span></td>
-				<td><input class="solar4" type="text" name="patternSetName" value=""
+				<td><span class="solar4">Name</span></td>
+				<td><input class="solar4" type="text" name="name" value=""
 					size="40"></td>
 
 			</tr>

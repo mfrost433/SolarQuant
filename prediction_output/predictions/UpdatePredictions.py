@@ -4,25 +4,14 @@ import datetime as dt
 import csv
 import mysql.connector
 import json
-requestIds = []
 
 cnx = mysql.connector.connect(user='solarquant', password='solarquant',
                               host='localhost',
                               database='solarquant')
 cursor = cnx.cursor()
 
-directory = os.path.dirname(__file__)
-for the_file in os.listdir(directory):
-    try:
-        if(the_file.find("prediction")):
-            word = the_file.split("_")
-            requestIds.append(int(word[0]))
-    except:
-        1
-
-
 def getPredictionRequestInfo(requestId):
-    query = ("SELECT * FROM prediction_requests "
+    query = ("SELECT NODE_ID, SOURCE_ID, DATE_REQUESTED FROM prediction_requests "
              "WHERE REQUEST_ID = {}")
 
     query = query.format(requestId)
@@ -30,17 +19,42 @@ def getPredictionRequestInfo(requestId):
     cursor.execute(query)
 
     data = cursor.fetchall()[0]
+    nodeId = data[0]
+    sourceId = data[1]
+    dateRequested = data[2]
 
-
-    nodeId = data[1]
-    sourceId = data[2]
-    dateRequested = data[3]
     return nodeId, sourceId, dateRequested
 
-for i in requestIds:
+
+def update_predictions(request_id):
+    [nodeId, srcId, dateRequested] = getPredictionRequestInfo(request_id)
+    endDate = dateRequested + dt.timedelta(days=7)
+    endString = endDate.strftime("%Y-%m-%dT12%%3A00")
+
+    startString = dateRequested.strftime("%Y-%m-%dT12%%3A00")
+
+    query = "UPDATE prediction_output SET WATT_HOURS = %s WHERE REQUEST_ID = %s AND DATE = %s"
+    request = "https://data.solarnetwork.net/solarquery/api/v1/pub/datum/list?nodeId=" + str(nodeId) + "&aggregation=ThirtyMinute&startDate=" + \
+                  startString + "&endDate=" + endString + "&sourceIds=" + srcId + "&max=5000000"
+    response = urlopen(request)
+
+
+
+    data = json.loads(response.read())
+
+    inp = [(line["wattHours"], request_id, dt.datetime.strptime(line["created"], "%Y-%m-%d %H:%M:%S.%fZ")) for line in data["data"]["results"]]
+    cursor.executemany(query,(inp))
+    cnx.commit()
+
+query = "SELECT REQUEST_ID FROM prediction_requests"
+cursor.execute(query)
+request_ids = cursor.fetchall()
+
+for i in request_ids:
+    update_predictions(i[-1])
     try:
+
         nodeId, srcId, dateRequested = getPredictionRequestInfo(i)
-        endDate = dateRequested + dt.timedelta(days=7)
         dateRequested = dateRequested - dt.timedelta(days=1)
         startString = dateRequested.strftime("%Y-%m-%dT12%%3A00")
         endDate = dateRequested + dt.timedelta(days=7)
@@ -61,7 +75,7 @@ for i in requestIds:
                     outfile.write(string)
 
             except Exception as e:
-                print(e)
+                pass
     except Exception as e:
-        print(e)
+        pass
 

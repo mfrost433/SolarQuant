@@ -47,6 +47,12 @@ def error_state():
     cnx.commit()
     exit(1)
 
+def log_end_time():
+    ctime = datetime.datetime.now()
+    query = ("UPDATE training_state_time SET COMPLETION_DATE=%s WHERE REQUEST_ID=%s AND STATE=%s")
+    cursor.execute(query, (ctime, args.reqId, 2))
+    cnx.commit()
+
 
 def log_error(messg):
     f = "../logs/data_retrieval.txt"
@@ -64,6 +70,7 @@ def get_weather_value(word):
     for i in range(len(weather_words)):
         if weather_words[i] == word:
             return (i % 3) / 2
+
 
 
 def populate():
@@ -97,13 +104,12 @@ def populate():
     data = cursor.fetchall()
     node_id = 0
     src_id = ''
-
+    training_start_date = datetime.datetime.fromtimestamp(1)
     for row in data:
         node_id = str(row[0])
         src_id = str(row[1])
         training_start_date = row[2]
     start_date_dt = datetime.datetime.fromtimestamp(1)
-
     # tells the dataretriever class to download API data into chunks folders
     try:
         dr = DataRetriever(node_id, src_id, start_date, end_date)
@@ -156,12 +162,16 @@ def populate():
     # updates node datum in the raw node data table
     prev_date = datetime.datetime.strptime("1000", "%Y")
     dat = []
+
     for i in result_set:
+
         try:
             for j in i['data']['results']:
                 c_date = datetime.datetime.strptime(j['created'], "%Y-%m-%d %H:%M:%S.%fZ")
                 # checks if date is within correct range and is after previous
+
                 if (c_date > start_date_dt) & (prev_date < c_date):
+
                     data_temp = [(node_id, src_id, c_date, j['wattHours'])]
 
                     dat = dat + data_temp
@@ -209,10 +219,9 @@ def populate():
     #
     for i in range(len(data) - 2):
         if data[i][0] > training_start_date and data[i + 1][0] == data[i][0] - datetime.timedelta(days=7):
+
             if data[i + 2][0] == data[i][0] - datetime.timedelta(days=14):
-
                 weather_data = get_weather_for_date(data[i][0])
-
                 try:
                     training_input = training_input + [(node_id,
                                                         src_id,
@@ -267,3 +276,6 @@ except Exception as e:
     log_error(str(e))
     tb.print_exc(e)
     error_state()
+
+
+log_end_time()

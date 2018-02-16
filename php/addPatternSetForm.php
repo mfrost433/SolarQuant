@@ -147,6 +147,11 @@ $myCalendar->setDate($now->format('d'), $now->format('m'), $now->format('Y'));
 $myCalendar->writeScript();
 
 ?>
+    Dynamic End Date <label class="switch">
+  <input type="checkbox" name="endDateToggle">
+  <span class="slider round"></span>
+</label>
+
 	</td>
 
 			</tr>
@@ -179,9 +184,9 @@ $myCalendar->writeScript();
 			</tr>
 				<tr>
 				<td><span class="solar4">Parameters</span></td>
-				<td><span class = "solar4">Epochs:  </span><input class="solar4" type="text" name="statusId" value="0"
+				<td><span class = "solar4">Epochs:  </span><input class="solar4" type="text" name="epochs" value="0"
 					size="4">
-					<span class = "solar4">Batch Size:  </span><input class="solar4" type="text" name="statusId" value="0"
+					<span class = "solar4">Batch Size:  </span><input class="solar4" type="text" name="batchSize" value="0"
 					size="4"></td>
 			</tr>
 			<tr>

@@ -20,7 +20,11 @@ argParser.add_argument("-e", "--enddate", dest="endDate", help="end date",
                        metavar="end")
 
 args = argParser.parse_args()
-
+def log_end_time():
+    ctime = dt.datetime.now()
+    query = ("UPDATE training_state_time SET COMPLETION_DATE=%s WHERE REQUEST_ID=%s AND STATE=%s")
+    cursor.execute(query, (ctime, args.reqId, 2))
+    cnx.commit()
 
 # clears all json files in the chunks folder
 chunksFolder = os.path.join(directory, "chunks/")
@@ -71,3 +75,4 @@ else:
 
     pr.update_datum(nodeId, srcId, end, start)
     pr.add_prediction_input(nodeId, srcId)
+log_end_time()

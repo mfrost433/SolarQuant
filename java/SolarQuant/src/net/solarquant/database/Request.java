@@ -21,6 +21,7 @@ public class Request {
 	private int requestId_, nodeId_;
 	private String sourceId_;
 	private Type type_;
+	private boolean dynamic_;
 	
 	public static enum Type{
 		
@@ -37,7 +38,8 @@ public class Request {
 	}
 
 
-	public Request(Date date, String engine, int status, int requestId, int nodeId, String sourceId, Type type) {
+	public Request(Date date, String engine, int status, 
+			int requestId, int nodeId, String sourceId, Type type, boolean dynamic) {
 
 		date_ = date;
 		engine_ = engine;
@@ -46,6 +48,7 @@ public class Request {
 		nodeId_ = nodeId;
 		sourceId_ = sourceId;
 		type_ = type;
+		dynamic_ = dynamic;
 
 	}
 
@@ -77,14 +80,21 @@ public class Request {
 		return type_;
 	}
 	
+	public boolean isDynamic() {
+		return dynamic_;
+	}
+	
 
 	public void updateStatus(StatusEnum newStatus) {
-		
 		if(type_ == Type.TRAINING) {
 			d.updateRequestStatus("training_requests", requestId_, newStatus.getStateId());
+			d.logNewStateDateTime("training_state_time", requestId_, newStatus.getStateId());
 		}else if(type_ == Type.PREDICTION){
 			d.updateRequestStatus("prediction_requests", requestId_, newStatus.getStateId());
+			d.logNewStateDateTime("prediction_state_time", requestId_, newStatus.getStateId());
 		}
+		
+		
 
 	}
 

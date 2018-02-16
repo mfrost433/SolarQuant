@@ -40,10 +40,14 @@ public class DBHandler {
 	}
 
 	// gets the oldest request, as the requests are processed in FIFO queue
-	public Request getOldestRequest(String tableName, StatusEnum status) {
+	public Request getOldestRequest(String tableName, StatusEnum status, boolean dynamic) {
 		Statement stmt = null;
 		try {
-			String query = "SELECT * FROM %s WHERE STATUS = %s " + "ORDER BY DATE_REQUESTED ASC LIMIT 1";
+			String query;
+			
+			query = dynamic ? "SELECT * FROM %s WHERE STATUS = %s AND DYNAMIC = 1 " + "ORDER BY DATE_REQUESTED ASC LIMIT 1":
+				"SELECT * FROM %s WHERE STATUS = %s " + "ORDER BY DATE_REQUESTED ASC LIMIT 1";
+								;
 			query = String.format(query, tableName, status.getStateId());
 			stmt = conn_.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
@@ -54,11 +58,11 @@ public class DBHandler {
 				if(tableName.contains("training")) {
 					return new Request(rs.getDate("DATE_REQUESTED"), rs.getString("REQUEST_ENGINE"),
 							rs.getInt("STATUS"), rs.getInt("REQUEST_ID"), rs.getInt("NODE_ID"),
-							rs.getString("SOURCE_ID"),Request.Type.TRAINING);
+							rs.getString("SOURCE_ID"),Request.Type.TRAINING, rs.getBoolean("DYNAMIC"));
 				}else {
 					return new Request(rs.getDate("DATE_REQUESTED"), rs.getString("REQUEST_ENGINE"),
 							rs.getInt("STATUS"), rs.getInt("REQUEST_ID"), rs.getInt("NODE_ID"),
-							rs.getString("SOURCE_ID"),Request.Type.PREDICTION);
+							rs.getString("SOURCE_ID"),Request.Type.PREDICTION, rs.getBoolean("DYNAMIC"));
 				}
 			}
 
@@ -82,6 +86,21 @@ public class DBHandler {
 			e.printStackTrace();
 		}
 	}
+
+	public void logNewStateDateTime(String tableName, int reqId, int status) {
+
+		Statement stmt = null;
+		Timestamp out = new Timestamp(System.currentTimeMillis());
+		try {
+			String query = "INSERT INTO %s VALUES(%s, %s, '%s', %s)";
+			query = String.format(query, tableName, reqId, status, out, null);
+			stmt = conn_.createStatement();
+			stmt.execute(query);
+		}catch( SQLException e ) {
+			e.printStackTrace();			
+		}
+	}
+
 	// gets the most recent date for the addition of new data for a specific node+source
 	// prevents the unnecessary downloading of existing data
 	public Timestamp getLatestTrainingDataDate(Request r) {
@@ -91,7 +110,6 @@ public class DBHandler {
 		String tableName = r.getType().getName() + "_input";
 
 		query = String.format(query, tableName, r.getNodeId(), r.getSourceId());
-		System.out.println(query);
 		Statement stmt;
 		try {
 			stmt = conn_.createStatement();
@@ -133,6 +151,53 @@ public class DBHandler {
 		} catch ( SQLException e ) {
 			e.printStackTrace();
 			return null;
+		}
+	}
+	
+	public Timestamp getStateCompletedDate(Request r, StatusEnum e) {
+		String query = "SELECT COMPLETION_DATE FROM %s WHERE REQUEST_ID = %s AND STATE = %s "
+				+ "ORDER BY COMPLETION_DATE DESC LIMIT 1";
+		if(r.getType() == Request.Type.TRAINING) {
+			query = String.format(query, "training_state_time", r.getRequestId(), e.getStateId());
+		}else {
+			query = String.format(query, "prediction_state_time", r.getRequestId(), e.getStateId());
+		}
+		Statement stmt;
+		try {
+			stmt = conn_.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+
+			if ( rs.next() == true ) {
+				Timestamp out = rs.getTimestamp("COMPLETION_DATE");
+				Timestamp t = new Timestamp(out.getTime());
+				return t;
+			} else {
+				return null;
+			}
+
+		} catch ( SQLException ex ) {
+			ex.printStackTrace();
+			return null;
+		}
+	}
+
+
+	public boolean checkPredictionComplete(Request r) {
+		String query = "SELECT * FROM prediction_output WHERE REQUEST_ID = %s";
+		query = String.format(query, r.getRequestId());
+
+		Statement stmt;
+		try {
+			stmt = conn_.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+			if ( rs.next() == true ) {
+				return true;
+			}else {
+				return false;
+			}
+
+		} catch ( SQLException e ) {
+			return false;
 		}
 	}
 }

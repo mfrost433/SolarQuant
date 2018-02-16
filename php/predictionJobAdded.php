@@ -22,17 +22,30 @@ $cDate  = date('Y-m-d H:i:s');
 file_put_contents($file, $date."\n", FILE_APPEND);
 
 $node = trim($_REQUEST['nodeId']);
-
+$name = $_REQUEST['name'];
 $source = trim($_REQUEST['sourceId']);
 $initState = "1";
 $engine = $_REQUEST['analysisEngine'];
+
+$start_day= $_REQUEST['startDate_day'];
+$start_month= $_REQUEST['startDate_month'];
+$start_year= $_REQUEST['startDate_year'];
+
+$end_day = $_REQUEST['endDate_day'];
+$end_month = $_REQUEST['endDate_month'];
+$end_year = $_REQUEST['endDate_year'];
+$dynamic = isset($_REQUEST['endDateToggle']);
+$time_start = strtotime("$start_day-$start_month-$start_year");
+$time_end = strtotime("$end_day-$end_month-$end_year");
+$end = date('Y-m-d H:i:s',$time_end);
+$start = date('Y-m-d H:i:s',$time_start);
 
 file_put_contents($file, $node."\n", FILE_APPEND);
 file_put_contents($file, $source."\n", FILE_APPEND);
 file_put_contents($file, $engine."\n", FILE_APPEND);
 
 
-$query = "INSERT INTO prediction_requests VALUES($val, $node, '$source','$cDate',$initState, '$engine')";
+$query = "INSERT INTO prediction_requests VALUES($val,'$name', $node, '$source','$cDate',$initState, '$engine', '$start',$dynamic, '$end')";
 file_put_contents($file, $query, FILE_APPEND);
 if($conn->query($query) === TRUE){
     file_put_contents($file, 'good', FILE_APPEND);

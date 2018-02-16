@@ -27,7 +27,7 @@
 		crossorigin=""></script>
 	<script type="text/javascript">
 	
-function deleteRequest2(reqId){	
+function deleteRequest(reqId){	
  	$.ajax({
 		type: "POST",
 		url: "deletePredictionRequest.php",
@@ -41,7 +41,13 @@ function deleteRequest2(reqId){
 
 function viewCorrelation(reqId){
 		   localStorage.setItem("reqId",reqId);
-			location = "../prediction/predictionFuture.php";
+			location = "../prediction/predictionFuture.php?reqId="+reqId;
+
+}
+
+function viewStateInfo(reqId){
+	location = "../stateInfo/infoprediction.php?reqId="+reqId;
+
 
 }
 
@@ -53,10 +59,11 @@ function viewCorrelation(reqId){
 			<td align='center'>
 			
 			<th>Request ID</th>
+			<th>Name</th>
 			<th>Node ID</th>
 			<th>Source ID</th>
 			<th>Request Date</th>
-			<th>Status</th>
+			<th>Status (Hover for notes, click for details)</th>
 			<th>Analysis Engine</th>
 			<th>Action</th>
 		</tr>
@@ -77,10 +84,11 @@ while ($row = $result->fetch_assoc()) {
     echo "<tr>";
     echo "<td></td>";
     echo "<td>" . $row['REQUEST_ID'] . "</td>";
+    echo "<td>" . $row['NAME'] . "</td>";
     echo "<td>" . $row['NODE_ID'] . "</td>";
     echo "<td>" . $row['SOURCE_ID'] . "</td>";
     echo "<td>" . $row['DATE_REQUESTED'] . "</td>";
-    echo "<td>" . getStatusButtonByNumber($row['STATUS']) . "</td>";
+    echo "<td>" . getStatusButtonByNumber($row['STATUS'], $row['REQUEST_ID']) . "</td>";
     echo "<td>" . $row['REQUEST_ENGINE'] . "</td>";
     echo "<td>" . getCorrelationButton($row['STATUS'], $row['REQUEST_ID']) . 
     "  <button type='button' class='btn btn-danger btn-xs' 
@@ -111,7 +119,7 @@ function getRefreshButton($status, $reqId){
     
 }
 
-function getStatusButtonByNumber($num)
+function getStatusButtonByNumber($num, $reqId)
 {
     $status = "";
     $type = "";
@@ -136,7 +144,7 @@ function getStatusButtonByNumber($num)
             $status = "Error";
             break;
     }
-    return "<button type='button' class='btn $type btn-xs'>$status</button>";
+     return "<button type='button' onClick='viewStateInfo(".$reqId.")' class='btn $type btn-xs'>$status</button>";
 }
 
 

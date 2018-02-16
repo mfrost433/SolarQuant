@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<head>
+
+<title>solarquant.Admin</title>
+<link href='../../css/solarStyle.css' type='text/css' rel='stylesheet'>
+<link href='../../css/bootstrap.min.css' type='text/css'
+	rel='stylesheet'>
+<link href='../../css/bootstrap-theme.min.css' type='text/css'
+	rel='stylesheet'>
+<script src='../../js/bootstrap.min.js'></script>
+<link href='../../includes/calendar.css' rel='stylesheet'
+	type='text/css' />
+<script language='javascript' src='../../includes/calendar.js'></script>
+
+</head>
 <meta charset="utf-8">
 <style>
 .area {
@@ -50,7 +64,7 @@ var svg = d3.select("svg"),
     height = +svg.attr("height") - margin.top - margin.bottom,
     height2 = +svg.attr("height") - margin2.top - margin2.bottom;
 
-var parseDate = d3.timeParse("%Y-%m-%dT%H:%M:%S.%fZ");
+var parseDate = d3.timeParse("%Y-%m-%d %H:%M:%S");
 
 var x = d3.scaleTime().range([0, width]),
     x2 = d3.scaleTime().range([0, width]),
@@ -73,27 +87,27 @@ var zoom = d3.zoom()
 
 var area = d3.area()
     .curve(d3.curveMonotoneX)
-    .x(function(d) { return x(d.created); })
+    .x(function(d) { return x(d.DATE); })
     .y0(height)
-    .y1(function(d) { return y(d.predictedWattHours); });
+    .y1(function(d) { return y(d.PREDICTED_WATT_HOURS); });
 
 var area2 = d3.area()
     .curve(d3.curveMonotoneX)
-    .x(function(d) { return x2(d.created); })
+    .x(function(d) { return x2(d.DATE); })
     .y0(height2)
-    .y1(function(d) { return y2(d.predictedWattHours); });
+    .y1(function(d) { return y2(d.PREDICTED_WATT_HOURS); });
     
 var areaReal = d3.area()
 .curve(d3.curveMonotoneX)
-.x(function(d) { return x(d.created); })
+.x(function(d) { return x(d.DATE); })
 .y0(height)
-.y1(function(d) { return y(d.wattHours); });
+.y1(function(d) { return y(d.WATT_HOURS); });
 
 var areaReal2 = d3.area()
 .curve(d3.curveMonotoneX)
-.x(function(d) { return x2(d.created); })
+.x(function(d) { return x2(d.DATE); })
 .y0(height2)
-.y1(function(d) { return y2(d.wattHours); });
+.y1(function(d) { return y2(d.WATT_HOURS); });
 
 svg.append("defs").append("clipPath")
     .attr("id", "clip")
@@ -115,13 +129,20 @@ var csvLink = "https://data.solarnetwork.net/solarquery/api/v1/pub/datum/list?"+
 var csvPath = "../../prediction_output/predictions/"+localStorage.getItem("reqId")+"_prediction.csv";
 
 var csv2Path = "../../prediction_output/predictions/"+localStorage.getItem("reqId")+"_real.csv";
-d3.csv(csvPath, type, function(error, data) {
-d3.csv(csv2Path, type, function(error2, data2) {
-  x.domain(d3.extent(data, function(d) { return d.created; }));
-  y.domain([0, d3.max(data, function(d) { return d.predictedWattHours*1.5; })]);
+"./graphFromDatabase.php?reqId="+localStorage.getItem("reqId")
+d3.json("./graphFutureFromDatabase.php?reqId="+localStorage.getItem("reqId"), function(error, data) {
+
+  data.forEach(function(d){
+	d.DATE = parseDate(d.DATE);
+	});
+
+
+  x.domain(d3.extent(data, function(d) { return d.DATE; }));
+  y.domain([0, d3.max(data, function(d) { return d.PREDICTED_WATT_HOURS*1.5; })]);
   x2.domain(x.domain());
   y2.domain(y.domain());
 
+ 
   focus.append("path")
       .datum(data)
       .attr("class", "area")
@@ -142,9 +163,10 @@ d3.csv(csv2Path, type, function(error2, data2) {
       .attr("d", area2);
   
   focus.append("path")
-  .datum(data2)
+  .datum(data)
   .attr("class", "areaReal")
   .attr("d", areaReal);
+
   context.append("path")
   .datum(data)
   .attr("class", "areaReal")
@@ -167,8 +189,6 @@ d3.csv(csv2Path, type, function(error2, data2) {
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
       .call(zoom);
 
-
-});
 });
 
 
@@ -195,12 +215,18 @@ function zoomed() {
 }
 
 function type(d) {
-  d.created = parseDate(d.created);
-  d.wattHours = parseFloat(d.wattHours);
-  d.predictedWattHours = parseFloat(d.predictedWattHours);
+  d.DATE = parseDate(d.DATE);
+  d.WATT_HOURS = parseFloat(d.WATT_HOURS);
+  d.PREDICTED_WATT_HOURS = parseFloat(d.PREDICTED_WATT_HOURS);
   return d;
 }
 
 </script>
+<?php
+	$id = $_REQUEST['reqId'];
+	echo '<a href=downloadCSV.php?reqId='.$id."><button>Download CSV</button></a>"
+?>
 </body>
+
+
 

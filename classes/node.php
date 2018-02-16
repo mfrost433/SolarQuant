@@ -251,17 +251,6 @@ class Node
 					echo($theNode->id);
 					echo("'><button type='button' class='btn btn-success'>Edit</button></a>\n");
 
-					echo(" <a href='nodeAction.php?function=viewProgress&nodeId=");
-					echo($theNode->id);
-					echo("'><button type='button' class='btn btn-success'>Progress</button></a>\n");
-					
-					echo(" <a href='nodeAction.php?function=createSinglePattern&nodeId=");
-					echo($theNode->id);
-					echo("'><button type='button' class='btn btn-success'>Add Pattern</button></a>\n");
-
-					echo(" <a href='nodeAction.php?function=refreshSources&nodeId=");
-					echo($theNode->id);
-					echo("'><button type='button' class='btn btn-info'>Refresh Sources</button></a>\n");
 					
 					echo(" <a href='nodeAction.php?function=delete&nodeId=");
 					echo($theNode->id);

@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -63,7 +65,7 @@ public abstract class TrainingManager implements NetManager{
 
 		//First check for running jobs - highest priority
 		logger.info(engineName_ + " - Checking running jobs...");
-		Request rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.RUNNING);
+		Request rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.RUNNING, false);
 
 		if ( rd != null ) {
 
@@ -81,7 +83,7 @@ public abstract class TrainingManager implements NetManager{
 		
 		//Next check for requests that are in retrieving data state.
 		logger.info(engineName_ + " - Checking data retrieval jobs...");
-		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.RETRIEVING_DATA);
+		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.RETRIEVING_DATA, false);
 		if ( rd != null ) {
 			reqId = rd.getRequestId();
 			engine = rd.getEngineName();
@@ -103,7 +105,7 @@ public abstract class TrainingManager implements NetManager{
 
 		//next check for jobs in initial state to progress
 		logger.info(engineName_ + " - Checking inital state jobs...");
-		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.INITIAL);
+		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.INITIAL, false);
 
 		if ( rd != null && rd.getEngineName().equalsIgnoreCase(engineName_)) {
 
@@ -130,9 +132,18 @@ public abstract class TrainingManager implements NetManager{
 				}
 			}
 
-		} else {
-			return;
 		}
+		logger.info(engineName_ + " - Checking for dynamic finished jobs to restart...");
+		rd = db.getOldestRequest(TRAINING_TABLE, StatusEnum.FINISHED, true);
+		if ( rd != null && rd.getEngineName().equalsIgnoreCase(engineName_)) {
+			Period diff = Period.between(db.getStateCompletedDate(rd, StatusEnum.RUNNING).toLocalDateTime().toLocalDate(), LocalDate.now());
+			if(rd.isDynamic()) {
+				if(diff.getDays() > 7)
+					rd.updateStatus(StatusEnum.INITIAL);
+			}
+			
+		}
+		
 	}
 
 	protected abstract boolean hasManagedProcessRunComplete(Request r);
