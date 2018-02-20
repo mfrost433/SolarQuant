@@ -9,6 +9,8 @@ import json
 import datetime
 import argparse
 import traceback as tb
+
+
 from DataRetriever import DataRetriever
 
 directory = os.path.dirname(__file__)
