@@ -6,13 +6,13 @@ import os
 import mysql.connector
 import datetime
 import json
-
+import logging
 # gets the directory of this file
 directory = os.path.dirname(__file__)
 
 weatherFolder = os.path.join(directory, "weather/")
 weatherFile = weatherFolder + '/weather_future.xml'
-
+logger = logging.getLogger('prediction_data_retriever')
 # db connection
 cnx = mysql.connector.connect(user='solarquant', password='solarquant',
                               host='localhost',
@@ -55,6 +55,7 @@ def update_weather():
     date_format = "%Y-%m-%dT%H:%M:%SZ"
 
     def add_to_database():
+        logger.info("Adding new weather to database")
         xml = xmlParse.parse(weatherFile)
         data = []
         for i in xml.iter(tag="time"):
@@ -85,9 +86,11 @@ def update_weather():
 
         data = interpolate(data)
         # removes old weather, populates with new
+        logger.info("deleting old weather prediction data")
         query = "DELETE FROM yr_weather WHERE 1"
-
+        cnx.commit()
         cursor.execute(query)
+        logger.info("Adding new weather prediction data")
         query = "INSERT INTO yr_weather VALUES (%s, %s, %s, %s, %s, %s, %s)"
         try:
             cursor.executemany(query, data)
@@ -185,6 +188,7 @@ def add_prediction_input(node_id, src_id):
         pass
 
     # removes outdated prediction data
+    logger.info("deleting old predictions")
     deletequery = "DELETE FROM prediction_input WHERE NODE_ID = %s AND SOURCE_ID = %s"
     print(node_id, src_id)
     cursor.execute(deletequery, (node_id, src_id))
@@ -199,6 +203,7 @@ def add_prediction_input(node_id, src_id):
         return data_w
 
     # gets the datum for the a single week, the number of weeks previous determined by num_prev
+
     def get_prev_datum_for_date(date,num_prev):
         date = date - datetime.timedelta(weeks=num_prev)
         query_prev = "SELECT WATT_HOURS FROM node_datum WHERE NODE_ID = {} AND SOURCE_ID = '{}' " \
@@ -209,6 +214,7 @@ def add_prediction_input(node_id, src_id):
 
 
     # inserts the prediction data into the formatted prediction input table.
+    logger.info("Inserting prediction input into table...")
     prediction_input = []
     for i in range(len(data) - 2):
         if (data[i][0] > start_date):

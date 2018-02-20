@@ -47,5 +47,5 @@ foreach($jsonData->data as $value){
     $conn->query($query);
 }
 
-
+header("location: nodeScreen/loadNodes.php"); 
 ?>

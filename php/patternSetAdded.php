@@ -81,7 +81,7 @@ if($conn->query($query2) === TRUE){
 	file_put_contents($file, 'good 2', FILE_APPEND);
 }
 file_put_contents($file, "$dynamic", FILE_APPEND);
-
+header("location: trainingScreen/loadTrainingQueue.php"); 
 
 
 

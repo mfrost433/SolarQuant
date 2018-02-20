@@ -14,7 +14,7 @@ import datetime as dt
 logger = logging.getLogger('pylog1')
 logger.setLevel(logging.DEBUG)
 
-fh = logging.FileHandler('/var/www/html/solarquant/logs/quantlog')
+fh = logging.FileHandler('/var/www/html/solarquant/logs/python_logs/data_retrieval_log')
 fh.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

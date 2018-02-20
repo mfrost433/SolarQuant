@@ -9,9 +9,19 @@ import json
 import datetime
 import argparse
 import traceback as tb
-
+import logging
 
 from DataRetriever import DataRetriever
+logger = logging.getLogger('training_data_retriever')
+logger.setLevel(logging.DEBUG)
+
+fh = logging.FileHandler('/var/www/html/solarquant/logs/python_logs/data_retrieval_log')
+fh.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+
+logger.addHandler(fh)
 
 directory = os.path.dirname(__file__)
 
@@ -87,10 +97,12 @@ def get_weather_value(word):
 
 
 def populate():
+    logger.info("Started data retrieval for training job!")
     chunks_folder = os.path.join(directory, "chunks/")
     weather_folder = os.path.join(directory, "weather/")
 
     # clear weather + datum chunk folders of old data
+    logger.info("Clearing out old chunks JSON")
     for the_file in os.listdir(chunks_folder):
         file_path = os.path.join(chunks_folder, the_file)
         try:
@@ -98,7 +110,7 @@ def populate():
                 os.unlink(file_path)
         except Exception as E:
             print(E)
-
+    logger.info("Clearing out old weather JSON")
     for the_file in os.listdir(weather_folder):
         file_path = os.path.join(weather_folder, the_file)
         try:
@@ -111,6 +123,7 @@ def populate():
     start_date = args.startDate
     end_date = args.endDate
 
+    logger.info("Accessing training request metadata")
     info_query = "SELECT NODE_ID, SOURCE_ID, START_DATE FROM training_requests WHERE REQUEST_ID = " + args.reqId
 
     cursor.execute(info_query)
@@ -125,11 +138,13 @@ def populate():
     start_date_dt = datetime.datetime.fromtimestamp(1)
     # tells the dataretriever class to download API data into chunks folders
     try:
+        logger.info("Attempting to run DataRetriever to download new JSON")
         dr = DataRetriever(node_id, src_id, start_date, end_date)
         start_date_dt = dr.startDate
         dr.get_node_data()
         dr.get_weather_data()
     except Exception as E:
+        logger.error("Failed to download JSON")
         tb.print_exc(E)
         log_error(str(E))
         error_state()
@@ -137,7 +152,7 @@ def populate():
     result_set = []
 
     # reads all json chunks into memory
-
+    logger.info("Reading from JSON into memory")
     for fname in sorted(os.listdir(chunks_folder)):
         data_file = open(chunks_folder + fname, 'r').read()
         result_set.append(json.loads(data_file))
@@ -147,6 +162,7 @@ def populate():
         data_file = open(weather_folder + fname, 'r').read()
         result_weather_set.append(json.loads(data_file))
 
+    logger.info("Attempting to insert new weather datum into database")
     query2 = "INSERT INTO weather_data VALUES (%s, %s, %s, %s, %s)"
     dat = []
 
@@ -169,7 +185,7 @@ def populate():
         log_error(str(E))
 
     cnx.commit()
-
+    logger.info("Attempting to insert new node datum into database")
     query2 = "INSERT INTO node_datum VALUES (%s, %s, %s, %s)"
 
     # updates node datum in the raw node data table
@@ -189,16 +205,17 @@ def populate():
                     dat = dat + data_temp
                     prev_date = c_date
         except Exception as E:
-            log_error(str(E))
+            logger.error(str(E))
     try:
         cursor.executemany(query2, dat)
     except Exception as E:
-        log_error(str(E))
+        logger.error(str(E))
         tb.print_exc(E)
 
     cnx.commit()
     data = []
     # selecting target wattages
+    logger.info("Attempting to retrieve formatted datum + weather data to put into training input table")
     for j in range(2):
         for i in range(7):
             i = i + 1
@@ -212,6 +229,7 @@ def populate():
             except Exception as E:
                 log_error(str(E))
     queryremove = "DELETE FROM training_input WHERE NODE_ID = %s AND SOURCE_ID = %s"
+    logger.info("Removing old training input")
     cursor.execute(queryremove, (node_id, src_id))
     cnx.commit()
     training_input = []
@@ -228,7 +246,7 @@ def populate():
     # IMPORTANT! : Inserts the formatted training datum into the training data table.
     # Only will input into training table if there is weather data at the same time
     #
-
+    logger.info("Inserting new training input into database!!")
     for i in range(len(data) - 2):
         if data[i][0] > training_start_date and data[i + 1][0] == data[i][0] - datetime.timedelta(days=7):
 
@@ -255,7 +273,7 @@ def populate():
     try:
         cursor.executemany(query4, training_input)
     except Exception as E:
-        log_error(str(E))
+        logger.error(str(E))
 
         tb.print_exc(E)
 
@@ -263,6 +281,7 @@ def populate():
     cnx.commit()
 
     # deletes json files after data is input into database
+    logger.info("deleting JSON")
     for the_file in os.listdir(chunks_folder):
         file_path = os.path.join(chunks_folder, the_file)
         try:
@@ -280,7 +299,7 @@ def populate():
                 pass
                 os.unlink(file_path)
         except Exception as E:
-            log_error(str(E))
+            logger.error(str(E))
 
 
 try:
@@ -290,5 +309,5 @@ except Exception as e:
     tb.print_exc(e)
     error_state()
 
-
+logger.info("Finished.")
 log_end_time()

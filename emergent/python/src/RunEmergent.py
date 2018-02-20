@@ -13,6 +13,19 @@ import prediction.DatabasePrediction as dp
 import datetime
 dir = os.path.dirname(__file__)
 
+logger = logging.getLogger('emergentlogger')
+logger.setLevel(logging.DEBUG)
+
+fh = logging.FileHandler('/var/www/html/solarquant/logs/python_logs/emergentlog')
+fh.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+
+logger.addHandler(fh)
+
+logger.info("Running emergent!")
+
 cnx = mysql.connector.connect(user='solarquant', password='solarquant',
                               host='localhost',
                               database='solarquant')
@@ -29,7 +42,6 @@ argParser.add_argument("-p", "--predict", action = 'store_false', dest="mode", h
 
 args = argParser.parse_args()
 file = os.path.join(dir, 'example.log'.format(args.reqId))
-logging.basicConfig(filename=file, filemode='w', level=logging.DEBUG)
 
 
 def getRequestParameters(type):
@@ -46,31 +58,45 @@ def log_end_time(type):
 
 try:
     if(args.mode):
+        logger.info("Started training job")
+        logger.info("Getting metadata")
         nodeId, srcId = getRequestParameters("training")
-        file = os.path.join(dir, "../run.sh")
 
+
+        file = os.path.join(dir, "../run.sh")
+        logger.info("creating training input file")
         gen.generate(args.reqId)
-        print('done')
+
+        logger.info("training begun")
         call([file,args.reqId, str(nodeId), srcId])
 
         file = os.path.join(dir, "../test.sh")
+        logger.info("evaluation begun")
         call([file, args.reqId, str(nodeId), srcId])
 
         plt.setupTrainingOutput(args.reqId)
+        logger.info("Storing output")
         dc.store_correlation(request_id=args.reqId)
+        logger.info("Finished.")
         log_end_time("training")
 
     else:
+        logger.info("Started prediction job")
+        logger.info("Getting metadata")
         nodeId, srcId = getRequestParameters("prediction")
+
         file = os.path.join(dir, "../predict.sh")
+        logger.info("creating prediction input file")
         genP.generate(args.reqId)
+        logger.info("prediction begun")
         call([file, args.reqId, str(nodeId), str(srcId)])
         plt.setupPredictionOutput(args.reqId)
+        logger.info("storing output")
         dp.store_correlation(request_id=args.reqId)
-        print("storin")
+        logger.info("Finished.")
         log_end_time("prediction")
 
 except Exception as e:
-    logging.info(str(e))
+    logging.error(str(e))
     tb.print_exc(e)
 
