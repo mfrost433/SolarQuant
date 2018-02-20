@@ -39,6 +39,17 @@ cursor = cnx.cursor()
 #
 
 # if there is an error with inputting data into database, transition request to error state
+
+import calendar
+from datetime import timedelta
+
+def utc_to_local(utc_dt):
+    # get integer timestamp to avoid precision lost
+    timestamp = calendar.timegm(utc_dt.timetuple())
+    local_dt = datetime.datetime.fromtimestamp(timestamp)
+    assert utc_dt.resolution >= timedelta(microseconds=1)
+    return local_dt.replace(microsecond=utc_dt.microsecond)
+
 def error_state():
     query = ("UPDATE training_requests SET STATUS = 5 "
              "WHERE REQUEST_ID = " + args.reqId)
@@ -164,7 +175,6 @@ def populate():
     dat = []
 
     for i in result_set:
-
         try:
             for j in i['data']['results']:
                 c_date = datetime.datetime.strptime(j['created'], "%Y-%m-%d %H:%M:%S.%fZ")
@@ -202,7 +212,6 @@ def populate():
     queryremove = "DELETE FROM training_input WHERE NODE_ID = %s AND SOURCE_ID = %s"
     cursor.execute(queryremove, (node_id, src_id))
     cnx.commit()
-
     training_input = []
 
     def get_weather_for_date(date):
@@ -217,6 +226,7 @@ def populate():
     # IMPORTANT! : Inserts the formatted training datum into the training data table.
     # Only will input into training table if there is weather data at the same time
     #
+
     for i in range(len(data) - 2):
         if data[i][0] > training_start_date and data[i + 1][0] == data[i][0] - datetime.timedelta(days=7):
 
@@ -225,7 +235,7 @@ def populate():
                 try:
                     training_input = training_input + [(node_id,
                                                         src_id,
-                                                        data[i][0],
+                                                        utc_to_local(data[i][0]),
                                                         datetime.datetime.utcnow(),
                                                         data[i + 1][1],
                                                         data[i + 2][1],
@@ -244,6 +254,7 @@ def populate():
         cursor.executemany(query4, training_input)
     except Exception as E:
         log_error(str(E))
+
         tb.print_exc(E)
 
 

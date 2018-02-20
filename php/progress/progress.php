@@ -161,6 +161,12 @@ d3.csv(csvPath, type, function(error, data) {
       .attr("class", "area")
       .attr("d", area);
 
+ focus.select("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+
 });
 }
 function brushed() {

@@ -7,7 +7,6 @@ import os
 import argparse
 import PredictionDataRetriever as pr
 import datetime as dt
-
 directory = os.path.dirname(__file__)
 argParser = argparse.ArgumentParser()
 argParser.add_argument("-r", "--reqid", dest="reqId", help="ID for request",
@@ -18,6 +17,9 @@ argParser.add_argument("-s", "--startdate", dest="startDate", help="start date",
 
 argParser.add_argument("-e", "--enddate", dest="endDate", help="end date",
                        metavar="end")
+
+
+
 
 args = argParser.parse_args()
 def log_end_time():

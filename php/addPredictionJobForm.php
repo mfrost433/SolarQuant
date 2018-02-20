@@ -32,7 +32,7 @@
 				data:"value="+obj.value,
 				success: function(data){
 					$(sourceId).html(data);
-				}
+					}
 				});
 	    }
 	    
@@ -48,7 +48,6 @@
 <?php
 // get class into the page
 require_once ('../classes/tc_calendar.php');
-require_once ("../classes/SolarUtility.php");
 
 // TODO make this reflect the patternset
 $defaultEngineId = 2;

@@ -2,17 +2,14 @@
 
 //echo("in node.php<br>");
 
-//require_once "/var/www/html/solarquant/classes/yo.inc";
-
 //echo("after yo import<br>");
 
 //imports
-#require_once "/var/www/html/solarquant/classes/WeatherDatum.php";
-#require_once "/var/www/html/solarquant/classes/SolarUtility.php";
 
-require_once "/var/www/html/solarquant/classes/WeatherDatum.php";
-require_once "/var/www/html/solarquant/classes/SolarUtility.php";
-require_once "/var/www/html/solarquant/classes/SolarError.php";
+
+require_once "./WeatherDatum.php";
+require_once "./SolarUtility.php";
+require_once "./SolarError.php";
 
 //echo("in node.php after imports 2<br>");
 

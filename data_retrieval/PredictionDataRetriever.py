@@ -21,7 +21,15 @@ cursor = cnx.cursor()
 
 PREFIX = "https://data.solarnetwork.net"
 chunksFolder = os.path.join(directory, "chunks/")
+import calendar
+from datetime import timedelta
 
+def utc_to_local(utc_dt):
+    # get integer timestamp to avoid precision lost
+    timestamp = calendar.timegm(utc_dt.timetuple())
+    local_dt = dt.datetime.fromtimestamp(timestamp)
+    assert utc_dt.resolution >= timedelta(microseconds=1)
+    return local_dt.replace(microsecond=utc_dt.microsecond)
 
 def update_weather():
     # fills in all 30 minute intervals with data.
@@ -178,8 +186,9 @@ def add_prediction_input(node_id, src_id):
 
     # removes outdated prediction data
     deletequery = "DELETE FROM prediction_input WHERE NODE_ID = %s AND SOURCE_ID = %s"
-
+    print(node_id, src_id)
     cursor.execute(deletequery, (node_id, src_id))
+
     cnx.commit()
 
     # returns the weather at a datetime that is specified in the input
@@ -211,7 +220,7 @@ def add_prediction_input(node_id, src_id):
             try:
                 prediction_input = prediction_input + [(node_id,
                                                         src_id,
-                                                        prediction_date,
+                                                        utc_to_local(prediction_date),
                                                         datetime.datetime.utcnow(),
                                                         data[i][1],
                                                         prev_week[0][0],

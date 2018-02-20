@@ -1,6 +1,6 @@
 <?php
 
-$file = '/var/www/html/solarquant/php/log.txt';
+$file = './log.txt';
 
 
 
