@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QuantExecutor.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuantExecutor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SolarQuant/src/QuantExecutor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -23,10 +23,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunTraining.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RunTraining.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SolarQuant/src/com/run/RunTraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
+            <state relative-caret-position="79">
               <caret line="81" column="62" lean-forward="false" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
               <folding />
             </state>
@@ -293,14 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SolarQuant/src/com/run/RunTraining.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="81" column="62" lean-forward="false" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SolarQuant/src/QuantExecutor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -308,6 +300,14 @@
           <folding>
             <element signature="e#143#176#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarQuant/src/com/run/RunTraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="81" column="62" lean-forward="false" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

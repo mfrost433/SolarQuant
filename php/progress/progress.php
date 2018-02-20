@@ -147,7 +147,7 @@ d3.csv(csvPath, type, function(error, data) {
 });
 
 function updateData(){
-var csvPath = "../../logs/"+localStorage.getItem("reqId")+"_log.csv";
+var csvPath = "../../logs/progress_logs/"+localStorage.getItem("reqId")+"_log.csv";
 d3.csv(csvPath, type, function(error, data) {
 
 
