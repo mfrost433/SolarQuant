@@ -39,7 +39,7 @@ def predict(request_id):
 
     # gets formatted input data
     logger.info("Retrieving prediction input")
-    [x, dates] = dR.get_prediction_data(request_id)
+    [prediction_input, dates] = dR.get_prediction_data(request_id)
     node_id, src_id,_ = dR.get_prediction_request_info(request_id)
 
     filename = os.path.join(directory, '../../trained_models/{}_{}_model.h5'.format(str(node_id),src_id))
@@ -47,11 +47,9 @@ def predict(request_id):
     # loads a pretrained model's weights
 
     model.load_weights(filename)
-    filename = os.path.join(directory,'../../../../../prediction_output/predictions/{}_prediction.csv'
-                            .format(str(request_id)))
 
     logger.info("Running prediction")
-    prediction = model.predict(x, verbose=0, batch_size=100)
+    prediction = model.predict(prediction_input, verbose=0, batch_size=100)
     prediction = np.array(prediction)
 
     logger.info("Storing prediction output")
