@@ -43,3 +43,20 @@
 2018-02-22 16:21:03,675 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
 2018-02-22 16:21:04,406 - training_data_retriever - INFO - Removing old training input
 2018-02-22 16:21:04,773 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-02-22 16:21:23,056 - training_data_retriever - INFO - deleting JSON
+2018-02-22 16:21:23,068 - training_data_retriever - INFO - Finished.
+2018-02-22 16:22:06,778 - pylog1 - INFO - Started QuantExecutor!
+2018-02-22 16:22:06,780 - pylog1 - INFO - Running training...
+2018-02-22 16:22:06,781 - pylog1 - INFO - Building model
+2018-02-22 16:22:06,944 - pylog1 - INFO - Retrieving training input
+2018-02-22 16:22:07,843 - pylog1 - INFO - Started normalization of data
+2018-02-22 16:22:08,102 - pylog1 - INFO - Fitting model
+2018-02-22 16:47:03,080 - pylog1 - INFO - Started QuantExecutor!
+2018-02-22 16:47:03,082 - pylog1 - INFO - Running training...
+2018-02-22 16:47:03,082 - pylog1 - INFO - Building model
+2018-02-22 16:47:03,147 - pylog1 - INFO - Retrieving training input
+2018-02-22 16:47:04,072 - pylog1 - INFO - Started normalization of data
+2018-02-22 16:47:04,355 - pylog1 - INFO - Fitting model
+2018-02-22 16:49:14,508 - pylog1 - INFO - Completed fitting
+2018-02-22 16:49:14,527 - pylog1 - INFO - Evaluating model
+2018-02-22 16:49:15,815 - pylog1 - INFO - Storing correlation

@@ -79,7 +79,7 @@ def train(request_id):
     check = ModelCheckpoint(filename, monitor='val_loss', verbose=0, save_best_only=True, save_weights_only=True,
                             mode='auto', period=1)
     csv_filename = os.path.join(directory,
-                            '../../../../../logs/progess_logs/{}_log.csv'.format(request_id))
+                            '../../../../../logs/progress_logs/{}_log.csv'.format(request_id))
     csv_logger = CSVLogger(csv_filename, append=True, separator=',')
 
     # define early stopping - if the model is not improving / getting worse, stop the training to save time.
