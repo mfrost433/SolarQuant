@@ -90,7 +90,6 @@ def train(request_id):
 
     [x_train, y_train, x_test, y_test, dates_train,dates_test] = dataRetriever.get_data(request_id)
 
-    #[x_train, y_train, x_test, y_test, out_dates] = ip.get_data(request_id)
     # train!!!
     logger.info("Fitting model")
     model.fit(

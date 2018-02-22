@@ -76,13 +76,6 @@ def log_end_time():
     cursor.execute(query, (ctime, args.reqId, 2))
     cnx.commit()
 
-
-def log_error(messg):
-    f = "../logs/data_retrieval.txt"
-    filename = os.path.join(directory, f)
-    with open(filename, "a") as myfile:
-        myfile.write("\nERROR:" + messg)
-
 # weather words are seperated into equivalence classes,
 # semi-ordinal weather values are converted into a continuous value between 0 and 1
 def get_weather_value(word):
@@ -146,7 +139,7 @@ def populate():
     except Exception as E:
         logger.error("Failed to download JSON")
         tb.print_exc(E)
-        log_error(str(E))
+        logger.error(str(E))
         error_state()
 
     result_set = []
@@ -177,12 +170,12 @@ def populate():
                     dat = dat + data_temp
         except Exception as E:
             pass
-            log_error(str(E))
+            logger.error(str(E))
 
     try:
         cursor.executemany(query2, dat)
     except Exception as E:
-        log_error(str(E))
+        logger.error(str(E))
 
     cnx.commit()
     logger.info("Attempting to insert new node datum into database")
@@ -227,7 +220,7 @@ def populate():
                 cursor.execute(query_data)
                 data = data + cursor.fetchall()
             except Exception as E:
-                log_error(str(E))
+                logger.error(str(E))
     queryremove = "DELETE FROM training_input WHERE NODE_ID = %s AND SOURCE_ID = %s"
     logger.info("Removing old training input")
     cursor.execute(queryremove, (node_id, src_id))
@@ -289,7 +282,7 @@ def populate():
                 pass
                 os.unlink(file_path)
         except Exception as E:
-            log_error(str(E))
+            logger.error(str(E))
 
     for the_file in os.listdir(weather_folder):
         file_path = os.path.join(weather_folder, the_file)
@@ -305,7 +298,7 @@ def populate():
 try:
     populate()
 except Exception as e:
-    log_error(str(e))
+    logger.error(str(e))
     tb.print_exc(e)
     error_state()
 

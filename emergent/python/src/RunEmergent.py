@@ -16,7 +16,7 @@ dir = os.path.dirname(__file__)
 logger = logging.getLogger('emergentlogger')
 logger.setLevel(logging.DEBUG)
 
-fh = logging.FileHandler('/var/www/html/solarquant/logs/python_logs/emergentlog')
+fh = logging.FileHandler('../../logs/python_logs/emergentlog')
 fh.setLevel(logging.DEBUG)
 
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -56,6 +56,8 @@ def log_end_time(type):
     cursor.execute(query, (ctime, args.reqId, 3))
     cnx.commit()
 
+
+emergent_log_file = '../../logs/emergent_logs/runlog'
 try:
     if(args.mode):
         logger.info("Started training job")
@@ -72,7 +74,7 @@ try:
 
         file = os.path.join(dir, "../test.sh")
         logger.info("evaluation begun")
-        call([file, args.reqId, str(nodeId), srcId])
+        call([file, args.reqId, str(nodeId), srcId, emergent_log_file])
 
         plt.setupTrainingOutput(args.reqId)
         logger.info("Storing output")
@@ -89,7 +91,7 @@ try:
         logger.info("creating prediction input file")
         genP.generate(args.reqId)
         logger.info("prediction begun")
-        call([file, args.reqId, str(nodeId), str(srcId)])
+        call([file, args.reqId, str(nodeId), str(srcId), emergent_log_file])
         plt.setupPredictionOutput(args.reqId)
         logger.info("storing output")
         dp.store_correlation(request_id=args.reqId)
