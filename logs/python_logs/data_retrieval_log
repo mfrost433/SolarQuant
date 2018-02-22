@@ -24,3 +24,22 @@
 2018-02-21 10:25:02,033 - training_data_retriever - INFO - Inserting new training input into database!!
 2018-02-21 10:25:07,369 - training_data_retriever - INFO - deleting JSON
 2018-02-21 10:25:07,375 - training_data_retriever - INFO - Finished.
+2018-02-22 16:20:02,603 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-02-22 16:20:02,636 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-02-22 16:20:02,637 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-02-22 16:20:02,637 - training_data_retriever - INFO - Accessing training request metadata
+2018-02-22 16:20:02,638 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-02-22 16:20:02,639 - training_data_retriever - ERROR - Failed to download JSON
+2018-02-22 16:20:02,639 - training_data_retriever - ERROR - __init__() takes at least 7 arguments (1 given)
+2018-02-22 16:21:02,137 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-02-22 16:21:02,137 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-02-22 16:21:02,138 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-02-22 16:21:02,138 - training_data_retriever - INFO - Accessing training request metadata
+2018-02-22 16:21:02,138 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-02-22 16:21:03,426 - training_data_retriever - INFO - Reading from JSON into memory
+2018-02-22 16:21:03,435 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-02-22 16:21:03,441 - training_data_retriever - ERROR - 'sky'
+2018-02-22 16:21:03,564 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-02-22 16:21:03,675 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-02-22 16:21:04,406 - training_data_retriever - INFO - Removing old training input
+2018-02-22 16:21:04,773 - training_data_retriever - INFO - Inserting new training input into database!!
