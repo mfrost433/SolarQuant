@@ -3,6 +3,7 @@ SolarQuant
 
 SolarQuant is an open source system for predicting energy generation/consumption
 using Machine Learning techniques implemented with Keras (TensorFlow backend).
+http://solarnetwork.net/v4/solarquant/
 
 ## System + Components
 In the SolarQuant system, the main system processes are identified as TRAINING jobs
