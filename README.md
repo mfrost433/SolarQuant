@@ -50,4 +50,16 @@ for visualizing the output of the NN model.
 
 ## Setting Up / Deploying
 
-Requires an Ubuntu setup.
+Requires an Ubuntu 16.04 machine.
+
+This is a prototype system and a work in progress. Therefore it is not yet
+set up for distribution. Must be done manually.
+
+Unfortunately, not all dependencies have been recorded for easy re-deployment.
+Python dependencies will have to be installed manually, as well as MySQL, PHPMyAdmin,
+and Web Server for to deploy the app.
+
+Deploy into /var/www/html/solarquant folder
+Setup CRON tab for the Java scheduler.
+
+
