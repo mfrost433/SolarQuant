@@ -23,5 +23,3 @@ def get_data(reqId):
     y_test_new = np.reshape(y_test[new_start:], [-1, lookback, 1]);
 
     return x_train_new, y_train_new, x_test_new, y_test_new, dates_train,dates_test
-
-get_data(175)

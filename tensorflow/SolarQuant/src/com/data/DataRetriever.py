@@ -129,24 +129,25 @@ def process_data(data, request_id):
     pressures = [float(i) for i in pressures]
     humidities = [float(i) for i in humidities]
 
-    [maxi, mini] = get_min_max(request_id, "TEMP")
-    temps = [2 * ((i - mini) / (maxi - mini)) - 1 for i in temps]
+    #[maxi, mini] = get_min_max(request_id, "TEMP")
 
-    [maxi, mini] = get_min_max(request_id, "WATT_HOURS")
-    prev1_wattages = [2 * ((i - mini) / (maxi - mini)) - 1 for i in prev1_wattages]
-    prev2_wattages = [2 * ((i - mini) / (maxi - mini)) - 1 for i in prev2_wattages]
+    #temps = [2 * ((i - mini) / (maxi - mini)) - 1 for i in temps]
 
-    [maxi, mini] = get_min_max(request_id, "PRESSURE")
-    pressures = [2 * ((i - mini) / (maxi - mini)) - 1 for i in pressures]
+    #[maxi, mini] = get_min_max(request_id, "WATT_HOURS")
+    #prev1_wattages = [2 * ((i - mini) / (maxi - mini)) - 1 for i in prev1_wattages]
+    #prev2_wattages = [2 * ((i - mini) / (maxi - mini)) - 1 for i in prev2_wattages]
 
-    [maxi, mini] = get_min_max(request_id, "HUMIDITY")
-    humidities = [2 * ((i - mini) / (maxi - mini)) - 1 for i in humidities]
+    #[maxi, mini] = get_min_max(request_id, "PRESSURE")
+    #pressures = [2 * ((i - mini) / (maxi - mini)) - 1 for i in pressures]
 
-    [maxi, mini] = get_min_max(request_id, "WIND_SPEED")
-    windspeeds = [2 * ((i - mini) / (maxi - mini)) - 1 for i in windspeeds]
+    #[maxi, mini] = get_min_max(request_id, "HUMIDITY")
+   # humidities = [2 * ((i - mini) / (maxi - mini)) - 1 for i in humidities]
 
-    [maxi, mini] = get_min_max(request_id, "WIND_DIR");
-    winddirs = [(i - mini) / (maxi - mini) for i in winddirs]
+    #[maxi, mini] = get_min_max(request_id, "WIND_SPEED")
+    #windspeeds = [2 * ((i - mini) / (maxi - mini)) - 1 for i in windspeeds]
+
+    #[maxi, mini] = get_min_max(request_id, "WIND_DIR");
+    #winddirs = [(i - mini) / (maxi - mini) for i in winddirs]
 
     wind_sin = [math.sin(i) for i in winddirs]
     wind_cos = [math.cos(i) for i in winddirs]

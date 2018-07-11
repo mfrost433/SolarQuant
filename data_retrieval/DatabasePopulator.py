@@ -264,7 +264,9 @@ def populate():
     query4 = ("INSERT INTO training_input "
               "VALUES (%s,%s,%s, %s, %s, %s, %s, %s, %s,%s,%s, %s, %s)")
     try:
+        logger.info("Attempting to store data")
         cursor.executemany(query4, training_input)
+        logger.info("Successfully entered new training input of size "+ str(len(training_input)))
     except Exception as E:
         logger.error(str(E))
 

@@ -20,17 +20,16 @@
       <file leaf-file-name="DatabasePopulator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DatabasePopulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1141">
-              <caret line="281" column="20" lean-forward="false" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
+            <state relative-caret-position="874">
+              <caret line="266" column="45" selection-start-line="266" selection-start-column="45" selection-end-line="266" selection-end-column="45" />
               <folding>
-                <element signature="e#242#264#0" expanded="true" />
-                <marker date="1519176293722" expanded="true" signature="1952:2027" ph="UPDATE train... " />
-                <marker date="1519176293722" expanded="true" signature="3794:3874" ph="SELECT NODE_... training_requests" />
-                <marker date="1519176293722" expanded="true" signature="5246:5298" ph="INSERT INTO weather_data... " />
-                <marker date="1519176293722" expanded="true" signature="6004:6050" ph="INSERT INTO node_datum... " />
-                <marker date="1519176293722" expanded="true" signature="7144:7208" ph="SELECT DATE_... node_datum" />
-                <marker date="1519176293722" expanded="true" signature="7920:8011" ph="SELECT DATE_... weather_data" />
-                <marker date="1519176293722" expanded="true" signature="9771:9870" ph="INSERT INTO tensorflow_training_input... " />
+                <marker date="1531290631880" expanded="true" signature="1952:2027" ph="UPDATE train... " />
+                <marker date="1531290631880" expanded="true" signature="3794:3874" ph="SELECT NODE_... training_requests" />
+                <marker date="1531290631880" expanded="true" signature="5246:5298" ph="INSERT INTO weather_data... " />
+                <marker date="1531290631880" expanded="true" signature="6004:6050" ph="INSERT INTO node_datum... " />
+                <marker date="1531290631880" expanded="true" signature="7144:7208" ph="SELECT DATE_... node_datum" />
+                <marker date="1531290631880" expanded="true" signature="7920:8011" ph="SELECT DATE_... weather_data" />
+                <marker date="1531290631880" expanded="true" signature="9771:9870" ph="INSERT INTO tensorflow_training_input... " />
               </folding>
             </state>
           </provider>
@@ -107,20 +106,11 @@
     <option name="height" value="984" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,8 +122,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,6 +150,7 @@
   </component>
   <component name="RunManager" selected="Python.DatabasePopulatorTest">
     <configuration name="DataRetriever" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_retrieval" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -172,7 +161,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="data_retrieval" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataRetriever.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -180,6 +169,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="DatabasePopulator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_retrieval" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -190,7 +180,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="data_retrieval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/garbage/DatabasePopulatorOld2.py" />
       <option name="PARAMETERS" value="-r 109 -s 2017-12-09:04 -e 2017-12-22:15" />
@@ -199,6 +188,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="DatabasePopulatorTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_retrieval" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -209,15 +199,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="data_retrieval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DatabasePopulator.py" />
-      <option name="PARAMETERS" value="-r 195 -s 2019-01-09:00:00 -e 2019-02-09:00:00" />
+      <option name="PARAMETERS" value="-r 208 -s 2019-01-09:00:00 -e 2019-02-09:00:00" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="PredictionPopulator" type="PythonConfigurationType" factoryName="Python">
+      <module name="data_retrieval" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -228,7 +218,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="data_retrieval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PredictionPopulator.py" />
       <option name="PARAMETERS" value="-r 51 -s 2017-12-09:04 -e 2017-12-22:15" />
@@ -237,6 +226,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="UpdatePredictions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_retrieval" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -247,31 +237,28 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="data_retrieval" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../prediction_output/predictions/UpdatePredictions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.PredictionPopulator" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DatabasePopulator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.DatabasePopulatorTest" />
-      <item index="3" class="java.lang.String" itemvalue="Python.UpdatePredictions" />
-      <item index="4" class="java.lang.String" itemvalue="Python.DataRetriever" />
+    <list>
+      <item itemvalue="Python.PredictionPopulator" />
+      <item itemvalue="Python.DatabasePopulator" />
+      <item itemvalue="Python.DatabasePopulatorTest" />
+      <item itemvalue="Python.UpdatePredictions" />
+      <item itemvalue="Python.DataRetriever" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.DatabasePopulatorTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DataRetriever" />
-        <item index="2" class="java.lang.String" itemvalue="Python.UpdatePredictions" />
-        <item index="3" class="java.lang.String" itemvalue="Python.DatabasePopulator" />
+      <list>
+        <item itemvalue="Python.DatabasePopulatorTest" />
+        <item itemvalue="Python.DataRetriever" />
+        <item itemvalue="Python.UpdatePredictions" />
+        <item itemvalue="Python.DatabasePopulator" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -287,28 +274,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="42" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21078168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.040816326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21078168" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28936607" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32959184" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,21 +308,20 @@
     <breakpoint-manager>
       <option name="time" value="4" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/weather/weather_2017-10-28.json" />
     <entry file="file://$PROJECT_DIR$/garbage/DatabasePopulatorOld2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-142">
-          <caret line="176" column="17" lean-forward="false" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+          <caret line="176" column="17" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/garbage/DatabasePopulatorOld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="848">
-          <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
         </state>
       </provider>
     </entry>
@@ -391,17 +377,11 @@
     <entry file="file://$PROJECT_DIR$/DataRetriever.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWeatherPopulator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWeatherPopulator.py" />
     <entry file="file://$PROJECT_DIR$/PredictionDataRetriever.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -412,23 +392,22 @@
     <entry file="file://$PROJECT_DIR$/PredictionPopulator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-262">
-          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DatabasePopulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1141">
-          <caret line="281" column="20" lean-forward="false" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
+        <state relative-caret-position="874">
+          <caret line="266" column="45" selection-start-line="266" selection-start-column="45" selection-end-line="266" selection-end-column="45" />
           <folding>
-            <element signature="e#242#264#0" expanded="true" />
-            <marker date="1519176293722" expanded="true" signature="1952:2027" ph="UPDATE train... " />
-            <marker date="1519176293722" expanded="true" signature="3794:3874" ph="SELECT NODE_... training_requests" />
-            <marker date="1519176293722" expanded="true" signature="5246:5298" ph="INSERT INTO weather_data... " />
-            <marker date="1519176293722" expanded="true" signature="6004:6050" ph="INSERT INTO node_datum... " />
-            <marker date="1519176293722" expanded="true" signature="7144:7208" ph="SELECT DATE_... node_datum" />
-            <marker date="1519176293722" expanded="true" signature="7920:8011" ph="SELECT DATE_... weather_data" />
-            <marker date="1519176293722" expanded="true" signature="9771:9870" ph="INSERT INTO tensorflow_training_input... " />
+            <marker date="1531290631880" expanded="true" signature="1952:2027" ph="UPDATE train... " />
+            <marker date="1531290631880" expanded="true" signature="3794:3874" ph="SELECT NODE_... training_requests" />
+            <marker date="1531290631880" expanded="true" signature="5246:5298" ph="INSERT INTO weather_data... " />
+            <marker date="1531290631880" expanded="true" signature="6004:6050" ph="INSERT INTO node_datum... " />
+            <marker date="1531290631880" expanded="true" signature="7144:7208" ph="SELECT DATE_... node_datum" />
+            <marker date="1531290631880" expanded="true" signature="7920:8011" ph="SELECT DATE_... weather_data" />
+            <marker date="1531290631880" expanded="true" signature="9771:9870" ph="INSERT INTO tensorflow_training_input... " />
           </folding>
         </state>
       </provider>

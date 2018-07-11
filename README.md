@@ -60,6 +60,8 @@ Unfortunately, not all dependencies have been recorded for easy re-deployment.
 Python dependencies will have to be installed manually, as well as MySQL, PHPMyAdmin,
 and Web Server for to deploy the app.
 
+To setup database, load the structure from "database/solarquant.sql" 
+
 Deploy into /var/www/html/solarquant folder
 Setup CRON tab for the Java scheduler.
 
