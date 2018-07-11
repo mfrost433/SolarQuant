@@ -4,6 +4,12 @@
 # nothing in the extra folder
 extra/
 
+#no logs
+logs/emergent_logs/*
+logs/java_logs/*
+logs/python_logs/*
+logs/cron_logs/*
+
 
 #nothing in the inputFiles folder
 emergent/inputFiles/*.dat
