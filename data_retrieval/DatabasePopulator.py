@@ -228,8 +228,8 @@ def populate():
     training_input = []
 
     def get_weather_for_date(date):
-        query_weather = "SELECT DATE_CREATED, TEMP, HUMIDITY, PRESSURE, CLOUDINESS, WIND_SPEED, WIND_DIRECTION FROM " \
-                        "owm_data WHERE DATE_CREATED = \'{0}\'".format(str(date))
+        query_weather = "SELECT DATE_CREATED, TEMP, HUMIDITY, ATM FROM " \
+                        "weather_data WHERE DATE_CREATED = \'{0}\'".format(str(date))
 
         cursor.execute(query_weather)
         data_w = cursor.fetchall()
@@ -255,20 +255,21 @@ def populate():
                                                         weather_data[0][3],
                                                         weather_data[0][2],
                                                         weather_data[0][1],
-                                                        weather_data[0][4],
-                                                        weather_data[0][5],
-                                                        weather_data[0][6],
                                                         data[i][1])]
-                except:
+                    #print("success")
+                except Exception as E:
+                    #tb.print_exc(E)
+
                     pass
     query4 = ("INSERT INTO training_input "
-              "VALUES (%s,%s,%s, %s, %s, %s, %s, %s, %s,%s,%s, %s, %s)")
+              "VALUES (%s,%s,%s, %s, %s, %s, %s, %s, %s,%s)")
     try:
         logger.info("Attempting to store data")
         cursor.executemany(query4, training_input)
         logger.info("Successfully entered new training input of size "+ str(len(training_input)))
     except Exception as E:
         logger.error(str(E))
+
 
         tb.print_exc(E)
 

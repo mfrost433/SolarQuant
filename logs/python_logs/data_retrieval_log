@@ -120,3 +120,159 @@
 2018-07-11 18:31:47,686 - training_data_retriever - INFO - Successfully entered new training input of size 35132
 2018-07-11 18:31:47,791 - training_data_retriever - INFO - deleting JSON
 2018-07-11 18:31:47,796 - training_data_retriever - INFO - Finished.
+2018-07-16 13:41:17,698 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:41:17,698 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:41:17,698 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:41:17,698 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:41:17,698 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:41:18,792 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:41:18,793 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:41:18,793 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:41:18,794 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:41:19,863 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:41:26,337 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:41:26,337 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:41:26,338 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:41:26,338 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:41:26,338 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:41:27,379 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:41:27,380 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:41:27,381 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:41:27,382 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:41:28,091 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:41:29,766 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:41:29,788 - training_data_retriever - ERROR - 1054 (42S22): Unknown column 'PRESSURE' in 'field list'
+2018-07-16 13:41:59,570 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:41:59,570 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:41:59,570 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:41:59,570 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:41:59,571 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:42:01,072 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:42:01,073 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:42:01,074 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:42:01,075 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:42:01,830 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:42:01,830 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:42:09,283 - training_data_retriever - INFO - Attempting to store data
+2018-07-16 13:42:09,283 - training_data_retriever - INFO - Successfully entered new training input of size 0
+2018-07-16 13:42:09,283 - training_data_retriever - INFO - deleting JSON
+2018-07-16 13:42:09,284 - training_data_retriever - INFO - Finished.
+2018-07-16 13:43:16,345 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:43:16,345 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:43:16,346 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:43:16,346 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:43:16,346 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:43:17,448 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:43:17,449 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:43:17,450 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:43:17,451 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:43:18,166 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:43:18,167 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:43:25,343 - training_data_retriever - INFO - Attempting to store data
+2018-07-16 13:43:25,344 - training_data_retriever - INFO - Successfully entered new training input of size 0
+2018-07-16 13:43:25,344 - training_data_retriever - INFO - deleting JSON
+2018-07-16 13:43:25,345 - training_data_retriever - INFO - Finished.
+2018-07-16 13:43:41,740 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:43:41,740 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:43:41,741 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:43:41,741 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:43:41,741 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:43:42,722 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:43:42,723 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:43:42,723 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:43:42,724 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:43:43,424 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:43:43,424 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:44:05,072 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:44:05,072 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:44:05,073 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:44:05,073 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:44:05,073 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:44:06,013 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:44:06,014 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:44:06,014 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:44:06,015 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:44:06,731 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:44:06,731 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:44:15,241 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:44:15,241 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:44:15,241 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:44:15,242 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:44:15,242 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:44:17,896 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:44:17,897 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:44:17,897 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:44:17,898 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:44:18,569 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:44:18,570 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:44:47,814 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:44:47,814 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:44:47,814 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:44:47,814 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:44:47,814 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:44:48,757 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:44:48,758 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:44:48,758 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:44:48,758 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:44:49,423 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:44:49,423 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:45:01,422 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:45:01,422 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:45:01,422 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:45:01,422 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:45:01,422 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:45:02,426 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:45:02,427 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:45:02,428 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:45:02,429 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:45:03,118 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:45:03,119 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:45:16,422 - training_data_retriever - INFO - Attempting to store data
+2018-07-16 13:45:16,422 - training_data_retriever - ERROR - Not enough parameters for the SQL statement
+2018-07-16 13:45:16,423 - training_data_retriever - INFO - deleting JSON
+2018-07-16 13:45:16,426 - training_data_retriever - INFO - Finished.
+2018-07-16 13:46:10,805 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:46:10,805 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:46:10,806 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:46:10,806 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:46:10,806 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:46:11,746 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:46:11,747 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:46:11,748 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:46:11,749 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:46:12,462 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:46:12,463 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:46:26,149 - training_data_retriever - INFO - Attempting to store data
+2018-07-16 13:46:26,149 - training_data_retriever - ERROR - Not enough parameters for the SQL statement
+2018-07-16 13:46:26,149 - training_data_retriever - INFO - deleting JSON
+2018-07-16 13:46:26,152 - training_data_retriever - INFO - Finished.
+2018-07-16 13:47:04,319 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:47:04,319 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:47:04,319 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:47:04,319 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:47:04,320 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:47:05,356 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:47:05,357 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:47:05,358 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:47:05,359 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:47:06,050 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:47:06,051 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:47:18,932 - training_data_retriever - INFO - Attempting to store data
+2018-07-16 13:47:18,933 - training_data_retriever - ERROR - Not enough parameters for the SQL statement
+2018-07-16 13:47:18,933 - training_data_retriever - INFO - deleting JSON
+2018-07-16 13:47:18,936 - training_data_retriever - INFO - Finished.
+2018-07-16 13:48:02,834 - training_data_retriever - INFO - Started data retrieval for training job!
+2018-07-16 13:48:02,834 - training_data_retriever - INFO - Clearing out old chunks JSON
+2018-07-16 13:48:02,834 - training_data_retriever - INFO - Clearing out old weather JSON
+2018-07-16 13:48:02,834 - training_data_retriever - INFO - Accessing training request metadata
+2018-07-16 13:48:02,835 - training_data_retriever - INFO - Attempting to run DataRetriever to download new JSON
+2018-07-16 13:48:03,823 - training_data_retriever - INFO - Reading from JSON into memory
+2018-07-16 13:48:03,824 - training_data_retriever - INFO - Attempting to insert new weather datum into database
+2018-07-16 13:48:03,824 - training_data_retriever - INFO - Attempting to insert new node datum into database
+2018-07-16 13:48:03,825 - training_data_retriever - INFO - Attempting to retrieve formatted datum + weather data to put into training input table
+2018-07-16 13:48:04,492 - training_data_retriever - INFO - Removing old training input
+2018-07-16 13:48:04,493 - training_data_retriever - INFO - Inserting new training input into database!!
+2018-07-16 13:48:17,330 - training_data_retriever - INFO - Attempting to store data
+2018-07-16 13:48:19,696 - training_data_retriever - INFO - Successfully entered new training input of size 34066
+2018-07-16 13:48:19,769 - training_data_retriever - INFO - deleting JSON
+2018-07-16 13:48:19,775 - training_data_retriever - INFO - Finished.
