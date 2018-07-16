@@ -184,7 +184,6 @@ def populate():
     # updates node datum in the raw node data table
     prev_date = datetime.datetime.strptime("1000", "%Y")
     dat = []
-
     for i in result_set:
         try:
             for j in i['data']['results']:
@@ -194,6 +193,7 @@ def populate():
                 if (c_date > start_date_dt) & (prev_date < c_date):
 
                     data_temp = [(node_id, src_id, c_date, j['wattHours'])]
+		    logger.error(data_temp)
 
                     dat = dat + data_temp
                     prev_date = c_date

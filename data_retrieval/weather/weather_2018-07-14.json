@@ -1,0 +1,26 @@
+{
+    "data": {
+        "returnedResultCount": 2, 
+        "startingOffset": 0, 
+        "totalResults": 2, 
+        "results": [
+            {
+                "temp": 15, 
+                "created": "2018-07-14 00:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "locationId": 301025, 
+                "localDate": "2018-07-14", 
+                "localTime": "12:00"
+            }, 
+            {
+                "temp": 15, 
+                "created": "2018-07-14 02:00:00.000Z", 
+                "sourceId": "NZ MetService", 
+                "locationId": 301025, 
+                "localDate": "2018-07-14", 
+                "localTime": "14:00"
+            }
+        ]
+    }, 
+    "success": true
+}

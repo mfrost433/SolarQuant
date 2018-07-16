@@ -17,7 +17,7 @@ def build_model():
 
     # create and fit the network
     model = Sequential()
-    model.add(Dense(1024, activation=keras.activations.relu, input_dim=10))
+    model.add(Dense(1024, activation=keras.activations.relu, input_dim=7))
     model.add(Dropout(0.5))
 
     model.add(Dense(624, activation=keras.activations.relu))

@@ -117,11 +117,11 @@ def process_data(data, request_id):
     pressures = np.array([i[6] for i in data])
     humidities = np.array([i[7] for i in data])
     temps = np.array([i[8] for i in data])
-    windspeeds = np.array([i[10] for i in data])
-    winddirs = np.array([i[11] for i in data])
+    #windspeeds = np.array([i[10] for i in data])
+   # winddirs = np.array([i[11] for i in data])
 
     # normalizing data
-    cloudy = np.array([2 * float(i[9]) / 100 - 1 for i in data])
+    #cloudy = np.array([2 * float(i[9]) / 100 - 1 for i in data])
 
     prev1_wattages = [float(i) for i in prev1_wattages]
     prev2_wattages = [float(i) for i in prev2_wattages]
@@ -149,16 +149,16 @@ def process_data(data, request_id):
     #[maxi, mini] = get_min_max(request_id, "WIND_DIR");
     #winddirs = [(i - mini) / (maxi - mini) for i in winddirs]
 
-    wind_sin = [math.sin(i) for i in winddirs]
-    wind_cos = [math.cos(i) for i in winddirs]
+    #wind_sin = [math.sin(i) for i in winddirs]
+   # wind_cos = [math.cos(i) for i in winddirs]
 
-    inputs = [[hour_cos, hour_sin, day_of_week_cos, day_of_week_sin, temps, cloudy,humidities, windspeeds, wind_sin, wind_cos]]#, temps, humidities, windspeeds, wind_sin, wind_cos
+    inputs = [[hour_cos, hour_sin, day_of_week_cos, day_of_week_sin, temps, pressures, humidities]]#, windspeeds, wind_sin, wind_cos]]#, temps, humidities, windspeeds, wind_sin, wind_cos
                   #, cloudy, temps, pressures, humidities]]
 
     inputs = np.transpose(inputs, [2, 0, 1])
 
     try:
-        wattages = np.array([i[12] for i in data])
+        wattages = np.array([i[9] for i in data])
         wattages = np.transpose([wattages], [1, 0])
     except:
         wattages = []
